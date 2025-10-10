@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q4e32",
       "id": "[object Object]",
       "title": "[小鬱好不好] 來自現役小鬱陪伴者的暖心訊息、尼克小姐(IG: ot_ishere)的換季溫馨問候、節目未來微幅調整說明",
       "pub_date": "2020-11-15T23:01:12Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e31",
       "id": "[object Object]",
       "title": "《小柔的最後一天》體驗式桌遊－Podcaster里民服務處專場 2020/10/18 Live Podcast",
       "pub_date": "2020-11-08T11:25:55Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e30",
       "id": "[object Object]",
       "title": "[Kakudan。祭敘] 金曲大贏家阿爆阿仍仍的世界級MV取景地在屏東佳平法蒂瑪聖母堂！11/07-11/08 邀請你來佳平聽原住民青年說部落的故事 ft.法法漾播客 Ubi",
       "pub_date": "2020-10-29T23:31:40Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e29",
       "id": "[object Object]",
       "title": "[開槓好不好] 1017 Podcast 里民大會會後感想IG快閃直播精華、百靈果10/31台南佈道大會活動預告",
       "pub_date": "2020-10-29T06:38:13Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e28",
       "id": "[object Object]",
       "title": "[說書好不好] 雞蛋糕愛看書-6：一個諮商心理師和她的心理師，以及她的個案們的故事－《也許你該找人聊聊》 (Readmoo讀墨贊助電子書)",
       "pub_date": "2020-10-27T08:33:12Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e27",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.6 如果雞蛋糕的聲音能夠給你一點陪伴，我很榮幸！、推薦歌曲：好樂團《我們一樣可惜》",
       "pub_date": "2020-10-16T14:12:09Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e26",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-12：走出諮商室的深夜練習－自我耙梳被小鬱襲擊的脈絡",
       "pub_date": "2020-10-09T10:01:12Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e24",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-11：休養、治療跟養病是燒錢又費時的事，患者常常成為經濟弱勢，來聊聊個人財務規劃！ feat. 公務信箱 der 上進多魚、推薦書《養錢練習》、推薦Podcast《抹黑客》",
       "pub_date": "2020-10-03T10:01:17Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e23",
       "id": "[object Object]",
       "title": "[小鬱好不好] 基層公務員的心理諮商資源和實際申請使用的困境 feat. 公務信箱 der 多魚、切心和C大",
       "pub_date": "2020-10-02T10:01:20Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e22",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-10：練習因應天氣狀況控制生理和心理症狀",
       "pub_date": "2020-09-26T05:40:11Z",

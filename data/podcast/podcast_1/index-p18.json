@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q2e24",
       "id": "[object Object]",
       "title": "[說書好不好] S1E3 書海衝浪 pt.3 書海衝浪的三種好載具：紙本書、電子書和有聲書",
       "pub_date": "2020-04-04T10:31:10Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e23",
       "id": "[object Object]",
       "title": "[小鬱好不好] 什麼時候該去找精神科(身心科)醫生和心理師？、推薦書：《受傷的醫者》",
       "pub_date": "2020-04-03T10:01:17Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e22",
       "id": "[object Object]",
       "title": "[開槓好不好] COVID-19肺炎 podcaster防疫衛教串連活動",
       "pub_date": "2020-04-01T13:23:37Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e21",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.1 你有一則來自雞蛋糕的留言：Apple Podcast 天字第一號與第二號留言、感謝抖內的乾爹乾媽 (抽雞蛋糕手寫明信片)",
       "pub_date": "2020-03-31T10:01:17Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e20",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.0 你有一則來自雞蛋糕的留言：雞蛋糕想跟你說……",
       "pub_date": "2020-03-29T09:01:16Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e19",
       "id": "[object Object]",
       "title": "[說書好不好] S1E2 書海衝浪 pt.2 - 音浪太強，平台都在你的手機上：雞蛋糕推薦你Podcast的收聽好App",
       "pub_date": "2020-03-28T10:31:10Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e18",
       "id": "[object Object]",
       "title": "[小鬱好不好] 雞蛋糕朗讀：鄧惠文醫師回應「不知足」事件",
       "pub_date": "2020-03-27T10:01:15Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e17",
       "id": "[object Object]",
       "title": "[開槓好不好] 0322 Bonus 電池壞掉人雞蛋糕製作Podcast的省電SOP、推薦：台灣本土的Hosting服務平台(Firstory, SoundOn, Baabao)",
       "pub_date": "2020-03-22T15:24:08Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e16",
       "id": "[object Object]",
       "title": "[小鬱好不好] 被小鬱亂入的生活-3：眼中只看得見一條路、推薦書：《雖然痛苦到想死，卻無法辭職的理由》、推薦影片：泰辣婚禮記錄",
       "pub_date": "2020-03-21T10:01:17Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q1e14",
       "id": "[object Object]",
       "title": "[開槓好不好] 0320 真。斜槓ㄉ雞蛋糕跑通告",
       "pub_date": "2020-03-20T10:01:15Z",

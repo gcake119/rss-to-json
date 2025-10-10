@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2022Q1e15",
       "id": "[object Object]",
       "title": "《百態自由》日曆：2022年一月七日 星期五，給無法全然接納自己、習慣自我批判的我們",
       "pub_date": "2022-01-07T14:53:38Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q1e14",
       "id": "[object Object]",
       "title": "《百態自由》日曆：2022年一月一日 星期六，給感覺卡在泥淖中好久好久的我們",
       "pub_date": "2022-01-01T08:03:16Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q4e13",
       "id": "[object Object]",
       "title": "[說書好不好] 《以太奇襲》：一個 19 歲少年的夢想世界，打造下一個世代的網路與金融新生態、節目專屬 NFT 免費發放預告",
       "pub_date": "2021-12-28T23:00:52Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q4e12",
       "id": "[object Object]",
       "title": "[開槓好不好] 電池壞掉人踏上「多平台創作人」之路，歡迎抖內與訂閱支持",
       "pub_date": "2021-12-20T23:00:57Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q4e11",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活- 22：胖鬱不囉嗦，一擊把我 K.O.、推薦歌曲：好樂團《蒸發》、推薦小說：《無差別愛人》",
       "pub_date": "2021-12-14T19:21:20Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q4e10",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-21：小菜雞開始練肌、要知道換季總是讓人愛睏，你又何苦強打精神？",
       "pub_date": "2021-11-07T23:00:46Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q4e09",
       "id": "[object Object]",
       "title": "[小鬱好不好] 野生雞蛋糕講座出沒注意、《小鬱亂入》團隊新作嘖嘖募資、小鬱亂入的生活-20：論曬太陽之必要、胖胖瘦瘦",
       "pub_date": "2021-10-12T23:00:11Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q4e08",
       "id": "[object Object]",
       "title": "[小鬱好不好] 吃瓜聊劇-1：楊謹華《敗犬女王》 ft. 小花 傑西大叔",
       "pub_date": "2021-10-04T23:00:53Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q3e07",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-19 ：當被胖鬱踩扁成爛泥，我成為一坨會呼吸的肉、推薦書：《神奇的慢呼吸》、私房特調汽水",
       "pub_date": "2021-09-28T13:38:43Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q3e06",
       "id": "[object Object]",
       "title": "[說書好不好] 新書福利社－《人生雖苦，但還是值得活下去》、《你的善良，不要浪費在不值得的人身上》皇冠文化合作贈書",
       "pub_date": "2021-09-03T15:34:31Z",

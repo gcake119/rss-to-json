@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2021Q1e01",
       "id": "[object Object]",
       "title": "[小鬱好不好] 無法「好好說話」的孩子，常常已經滿「心」傷痕《我們的孩子在呼救》 Live Podcast ft. 謝依婷醫師、丁慧瑋編輯",
       "pub_date": "2021-01-21T04:41:49Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e43",
       "id": "[object Object]",
       "title": "[小鬱好不好] 校園中接住學生們的那雙手 ft. 廢物心理師 お茶 aka 現役大專院校心輔中心諮商心理師",
       "pub_date": "2021-01-10T23:01:11Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e42",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-15 ：回顧整個治療歷程，我還是很想念「以前」的自己 ft. 析心事務所der陳璿丞醫師 (B面)",
       "pub_date": "2020-12-31T08:52:53Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e41",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-14 ：開始學著明白生命都是選擇題－就診前的猶豫、談談自殺的看法 ft. 析心事務所der陳璿丞醫師 (A面)",
       "pub_date": "2020-12-31T04:24:20Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e40",
       "id": "[object Object]",
       "title": "[小鬱好不好] 無障礙閱讀 (A面)－從「出版社不讓人聽電子書」社群爭議，來聊聊機器語音朗讀的使用情境 ft. 小偉 and 阿基拉",
       "pub_date": "2020-12-30T16:01:18Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e37",
       "id": "[object Object]",
       "title": "[小鬱好不好] 重男輕女，讓所有男孩女孩都在不平等中受傷 (Readmoo讀墨贊助電子書)",
       "pub_date": "2020-12-28T12:20:57Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e36",
       "id": "[object Object]",
       "title": "[說書好不好] 雞蛋糕愛看書-7：腦袋裡「我不配」的聲音揮之不去－《冒牌者症候群》、推薦歌：魏如萱《恐慌症》 (Readmoo讀墨贊助電子書)",
       "pub_date": "2020-12-16T23:01:13Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e35",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-13：原來小鬱患者也可以捐血",
       "pub_date": "2020-12-14T23:01:10Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e34",
       "id": "[object Object]",
       "title": "2020 年末特別抽獎企劃說明、小禮物和心理議題桌遊開箱、《心靈角落》粉專2021活動參與者募集 (1130 IG直播音檔)",
       "pub_date": "2020-12-01T23:01:15Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e33",
       "id": "[object Object]",
       "title": "[小鬱好不好] 免費心理諮詢服務資源、「諮詢」和「諮商」的不同、你的錢值得成為更適合照顧你的形狀",
       "pub_date": "2020-11-29T23:01:11Z",

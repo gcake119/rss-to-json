@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q3e22",
       "id": "[object Object]",
       "title": "[小鬱好不好] 《小柔的最後一天》體驗式桌遊，開桌！ feat. 公務信箱 der 多魚、切心和C大",
       "pub_date": "2020-09-25T10:01:15Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e21",
       "id": "[object Object]",
       "title": "《PODCAST小學演講比賽》 憂憂子的第一天",
       "pub_date": "2020-09-23T10:54:59Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e20",
       "id": "[object Object]",
       "title": "[說書好不好] 《沒關係，是悲傷啊！》－引言",
       "pub_date": "2020-09-22T10:01:23Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e19",
       "id": "[object Object]",
       "title": "[說書好不好] 雞蛋糕愛看書-5： Andrew Solomon《正午惡魔》+《背離親緣》套書－直視疾病與親情的細膩觀察，以及節目和Readmoo開啟合作的小故事 (Readmoo讀墨贊助電子書)",
       "pub_date": "2020-09-18T10:01:25Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e18",
       "id": "[object Object]",
       "title": "[小鬱好不好] 你眼中的小鬱-2：吃下草莓挫冰的那口「哇！」，各種莓生都是美好的存在 feat.《Yo! What's Up 在幹嘛》Kelly",
       "pub_date": "2020-09-11T10:01:25Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e17",
       "id": "[object Object]",
       "title": "[語音信箱] 0908 快問快答聊不夠－詳答都在這！(內含超失控的棒球迷人生回憶錄)",
       "pub_date": "2020-09-08T11:06:02Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e16",
       "id": "[object Object]",
       "title": "[語音信箱] 0908 快問快答－每天花多少時間收聽podcast？喜歡什麼台南美食？支持哪支棒球隊？",
       "pub_date": "2020-09-08T09:12:37Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e15",
       "id": "[object Object]",
       "title": "[小鬱好不好] 台灣合格心理諮商所查詢網站",
       "pub_date": "2020-09-04T10:01:23Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e14",
       "id": "[object Object]",
       "title": "[開槓好不好] 0902 給新手Podcaster錄音前熱身和麥克風使用技巧的小分享 feat. 「被按下錄音鍵的數據王」Eason",
       "pub_date": "2020-09-02T10:01:17Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e13",
       "id": "[object Object]",
       "title": "[說書好不好] 雞蛋糕愛看書-4：如果可以穿越時空，會遇見怎樣的自己？－《想見你 Someday or one day：原著小說》(Readmoo讀墨贊助電子書)",
       "pub_date": "2020-08-30T10:03:34Z",

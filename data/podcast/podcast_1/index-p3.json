@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2024Q1e03",
       "id": "[object Object]",
       "title": "[魚蛋話燒] 小鬱陪伴者的壓力。如何建立緊急聯絡網？",
       "pub_date": "2024-02-21T08:52:36Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q1e02",
       "id": "[object Object]",
       "title": "[小鬱好不好] 自我照顧：好好吃飯，吃到親友想退群",
       "pub_date": "2024-01-26T14:58:47Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q1e01",
       "id": "[object Object]",
       "title": "[小鬱好不好] 回答聽友問題：感覺諮商卡住了是正常的嗎？我該怎麼辦？推薦書：《化學課》Apple TV 有影集！",
       "pub_date": "2024-01-19T14:03:58Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q1e10",
       "id": "[object Object]",
       "title": "[魚蛋話燒] 魔幻的2023：我們的過渡與改變",
       "pub_date": "2024-01-08T08:51:22Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q4e09",
       "id": "[object Object]",
       "title": "[草木燉雞] 從不同角度談憂鬱症的痊癒 ft. 《草木談心》",
       "pub_date": "2023-12-26T12:25:15Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q4e08",
       "id": "[object Object]",
       "title": "[燒酒雞乾杯] 抱怨也是種力量的展現！ ft.《心理師乾杯》阿寶",
       "pub_date": "2023-12-08T14:06:26Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q4e07",
       "id": "[object Object]",
       "title": "[燒酒雞乾杯] 更換諮商師後，是否多了些可能？ ft.《心理師乾杯》阿寶",
       "pub_date": "2023-11-18T02:36:09Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e06",
       "id": "[object Object]",
       "title": "[小鬱好不好] 當一個 podcaster 沒有錄音的時候。小新生日快樂！",
       "pub_date": "2023-09-28T15:54:54Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e05",
       "id": "[object Object]",
       "title": "[小鬱好不好] 近況更新：說不上好或不好，就停留在感受就好",
       "pub_date": "2023-08-23T15:19:10Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e04",
       "id": "[object Object]",
       "title": "（音檔修正）《城門城門幾丈高》第 9 集 田馥甄《一一》演唱會高雄場心得：重新理解灰色人生的彩色時刻",
       "pub_date": "2023-08-16T14:22:10Z",

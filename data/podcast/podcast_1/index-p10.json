@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2021Q2e11",
       "id": "[object Object]",
       "title": "「週五夜，加班夜」20210604直播存檔，聽友專屬好康請聽到最後",
       "pub_date": "2021-06-04T19:02:59Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q2e10",
       "id": "[object Object]",
       "title": "[小鬱好不好] 雞蛋糕的疫情隔離取暖會：在宅工作的軟硬體建置，打造舒適的工作環境和心靈綠洲",
       "pub_date": "2021-05-21T10:47:51Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q2e09",
       "id": "[object Object]",
       "title": "[開槓好不好] 一個國防小故事聊聊打疫苗多重要，我們的共同敵人是病毒而不是彼此",
       "pub_date": "2021-05-13T22:30:33Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q2e08",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-18：休養生息的四月，老母生日快樂，還有突襲抽獎",
       "pub_date": "2021-04-30T22:00:59Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e07",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-17：於是，我成為了房東眼中隨時都有危險的獨居租屋客",
       "pub_date": "2021-03-23T09:48:28Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e06",
       "id": "[object Object]",
       "title": "[草木燉雞] 你不是阿龍 You are NOT alone ft.草木談心",
       "pub_date": "2021-03-02T12:38:42Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e05",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-16：關於自我肯定，我還需要一些時間來練習 ft. 《心理師想跟你說》蘇蘇、芙芙",
       "pub_date": "2021-03-02T09:50:47Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e04",
       "id": "[object Object]",
       "title": "[小鬱好不好] 醫生怎麽確定我是憂鬱症（還有各式精神疾病）？－小鬱QA#1",
       "pub_date": "2021-02-19T18:06:00Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e03",
       "id": "[object Object]",
       "title": "[說書好不好] 2021線上國際書展：閱讀不間斷！合作夥伴－Readmoo讀墨電子書、東美文化、天下生活出版",
       "pub_date": "2021-02-09T12:00:38Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e02",
       "id": "[object Object]",
       "title": "[小鬱好不好] 跟心理師聊電影《靈魂急轉彎》ft. 草木談心",
       "pub_date": "2021-01-26T15:19:02Z",

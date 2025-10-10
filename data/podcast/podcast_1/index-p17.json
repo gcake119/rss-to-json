@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q2e34",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱警報！各位準媽媽卸貨前請注意：孕期憂鬱、推薦影集：《腦內解碼》、推薦Podcast：《大麻煩不煩》、《析心事務所的診間》",
       "pub_date": "2020-05-05T22:01:07Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e33",
       "id": "[object Object]",
       "title": "[開槓好不好] 0502 政府補助勞工免費心理諮商服務",
       "pub_date": "2020-05-02T02:56:35Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e32",
       "id": "[object Object]",
       "title": "[小鬱好不好] 「我們都有病」專訪：居然⋯⋯已經九年了嗎？、推薦書：《我們都有病：逃避，有什麼關係？致為病拚搏的年輕世代》",
       "pub_date": "2020-05-01T10:01:12Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e31",
       "id": "[object Object]",
       "title": "[開槓好不好] 0425 節目開張滿三個月(04/19)、Dynasonic iM6麥克風抽獎結果出爐",
       "pub_date": "2020-04-25T10:01:10Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e30",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.2 你有一則來自雞蛋糕的留言：節目首次抽獎「雞蛋糕手寫明信片」&回覆抽獎留言",
       "pub_date": "2020-04-24T10:01:09Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e29",
       "id": "[object Object]",
       "title": "Bonus 0423 鐵三角(Audio-Technica) AT2005麥克風測試 test~~test~~test~~",
       "pub_date": "2020-04-23T05:29:14Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e28",
       "id": "[object Object]",
       "title": "[小鬱好不好] 被小鬱亂入的生活-5：(省電更新)腦袋就像一團霧霧的果凍、推薦歌曲：阿爆(阿仍仍)《Sa'icelen 加油吧》",
       "pub_date": "2020-04-17T10:01:18Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e27",
       "id": "[object Object]",
       "title": "[開槓好不好]  0416 全民防疫通識課：陳建仁副總統來開講 0420免費開課囉！",
       "pub_date": "2020-04-16T13:00:55Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e26",
       "id": "[object Object]",
       "title": "[說書好不好] S1E4 書海衝浪 pt.4 非典型書蟲：用耳朵閱讀 - 機器語音朗讀電子書與有聲書",
       "pub_date": "2020-04-11T10:31:11Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e25",
       "id": "[object Object]",
       "title": "[小鬱好不好] 被小鬱亂入的生活-4：還能呼吸的時候，就得繼續呼吸、憂鬱症治療在台灣的四個重要不足",
       "pub_date": "2020-04-10T10:01:18Z",

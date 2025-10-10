@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q3e02",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-9：練習建立生活規律 - 彩蛋篇 feat. 尼克小姐 (IG: ot_ishere)",
       "pub_date": "2020-07-24T10:01:10Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e01",
       "id": "[object Object]",
       "title": "《洪大仙挑戰》[開槓好不好] 致敬《失眠必備良藥》以及《伍樓室友》Marks 里長伯 念出群組內188個節目名稱",
       "pub_date": "2020-07-20T05:59:33Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020-07-19",
       "id": "[object Object]",
       "title": "《喂喂你還好不好》第二季預告",
       "pub_date": "2020-07-19T10:01:14Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e49",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.6 謝謝DCard上留言推薦《喂喂你還好不好》的網友",
       "pub_date": "2020-07-17T10:45:55Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e48",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-8：練習建立生活規律 feat. 一個精神科職能治療師 (IG: ot_ishere)、推薦書：《微復原力》",
       "pub_date": "2020-07-10T10:01:11Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q3e47",
       "id": "[object Object]",
       "title": "[小鬱好不好] 請問我有被小鬱亂入嗎？雞蛋糕表示：介於有跟沒有之間",
       "pub_date": "2020-07-03T10:01:14Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020-06-27",
       "id": "[object Object]",
       "title": "[說書好不好] 預告：《沒關係，是悲傷啊！》It's OK that You're Not OK. (Readmoo讀墨贊助電子書)",
       "pub_date": "2020-06-27T10:01:16Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e46",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-7：斷電、推薦臉書粉專：《心靈角落》、推薦歌曲：尋人啟事The Wanted《我巨大的悲傷》",
       "pub_date": "2020-06-26T10:01:23Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e45",
       "id": "[object Object]",
       "title": "《端午特企x粽合接力》《白蛇傳》追求自己想要的人生後，回家過節壓力山大，怎麼辦？",
       "pub_date": "2020-06-24T16:01:17Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e44",
       "id": "[object Object]",
       "title": "[小鬱好不好] 雞蛋糕碎碎唸：醫病關係，以及尋求專業醫療協助的誠摯建議",
       "pub_date": "2020-06-19T10:01:16Z",

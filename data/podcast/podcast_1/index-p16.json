@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q2e43",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.5 感恩特輯：請收下我的膝蓋!!! 致現實中小心翼翼捧著玻璃心雞蛋糕的好朋友們",
       "pub_date": "2020-06-13T16:01:10Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e42",
       "id": "[object Object]",
       "title": "[小鬱好不好] 知識就是支持小鬱患者最大的力量：雞蛋糕充電書單 (Readmoo讀墨贊助電子書)",
       "pub_date": "2020-06-12T14:54:32Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e41",
       "id": "[object Object]",
       "title": "[說書好不好] 雞蛋糕愛看書-1：沉默契約 (感謝平安文化提供贈書，抽獎6/15截止)",
       "pub_date": "2020-06-06T10:01:18Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e40",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-6：不管有電還是沒電，每天都給自己一個甜甜的早安吧！",
       "pub_date": "2020-06-05T10:01:12Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e39",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.4 你有一則來自雞蛋糕的留言：謝謝因為「去他x的世界正向」受訪而認識雞蛋糕的你們",
       "pub_date": "2020-05-29T10:01:09Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e38",
       "id": "[object Object]",
       "title": "[小鬱好不好] Follow發路共享空間 - 發路電子報第30番：草莓三明治",
       "pub_date": "2020-05-22T10:01:14Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e37",
       "id": "[object Object]",
       "title": "[說書好不好] S1E6 書海衝浪 pt.6 回覆留言、有聲書學會、雞蛋糕私房書單、推薦Podcast：《書時料理》、《抹黑客》、《Yo! What's Up在幹嘛》",
       "pub_date": "2020-05-16T10:01:11Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e36",
       "id": "[object Object]",
       "title": "[小鬱好不好] SP.3 你有一則來自雞蛋糕的留言：來自小鬱陪伴者與病友們的訊息",
       "pub_date": "2020-05-15T10:01:11Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e35",
       "id": "[object Object]",
       "title": "[說書好不好] S1E5 書海衝浪 pt.5 Readmoo讀墨電子書平台&電子書閱讀器Mooink+、推薦Podcast：《星箭廣播》、《破水桶 The Bucket》",
       "pub_date": "2020-05-09T10:01:14Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q2e35",
       "id": "[object Object]",
       "title": "[說書好不好] 雞蛋糕愛看冊-預告 (全台語小單元)",
       "pub_date": "2020-05-08T10:01:10Z",

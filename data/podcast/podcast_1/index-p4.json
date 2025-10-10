@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2023Q3e03",
       "id": "[object Object]",
       "title": "[小鬱好不好] 當醫生說：「我幫你安排住院好不好？」 ft. 學妹 （IG：頂大研究生日常｜看診、用藥、日常記錄）",
       "pub_date": "2023-08-08T09:04:29Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e02",
       "id": "[object Object]",
       "title": "[小鬱好不好] 年輕族群心理健康支持方案開跑，踏進諮商室前可以做的準備",
       "pub_date": "2023-08-01T14:37:41Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e01",
       "id": "[object Object]",
       "title": "[燒酒雞乾杯] 諮商關係是一種以結束關係為前提的人際關係 ft. 《心理師乾杯》阿寶",
       "pub_date": "2023-07-26T07:44:53Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e24",
       "id": "[object Object]",
       "title": "[小鬱好不好] pdf2gpt：自製 pdf 文件 AI 翻譯小幫手、回覆 Apple Podcast 留言",
       "pub_date": "2023-07-18T12:41:33Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q3e23",
       "id": "[object Object]",
       "title": "[小鬱好不好] 節目總下載數破十五萬，歡迎拍拍抱抱誇誇！小聊 CoCo 李玟過世的影響",
       "pub_date": "2023-07-11T04:01:13Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q2e22",
       "id": "[object Object]",
       "title": "《城門城門幾丈高》第 8 集 （聽完有彩蛋）從兒童自殺數據增加的新聞，回想自己灰色和苦澀的學生時期",
       "pub_date": "2023-06-06T04:01:16Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q2e21",
       "id": "[object Object]",
       "title": "[小鬱好不好] 吃瓜聊劇-2：有一部宮部美幸《模仿犯》小說的同名台劇 ft.《草木談心》草老闆",
       "pub_date": "2023-05-30T04:01:15Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q2e20",
       "id": "[object Object]",
       "title": "[小鬱好不好] 我也好想要「同理心」那個酷東西！推薦 Podcast：《自助吧Tender》、《阿嘟你講真》",
       "pub_date": "2023-05-23T04:01:10Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q2e19",
       "id": "[object Object]",
       "title": "[小鬱好不好] 小鬱亂入的生活-27 ：當實證科學的信徒到王爺座前收驚",
       "pub_date": "2023-05-16T04:29:45Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2023Q2e18",
       "id": "[object Object]",
       "title": "《城門城門幾丈高》第 4 集 與醫師和心理師的合作關係：那些在精神科診間和諮商室才能實現的對話",
       "pub_date": "2023-05-05T01:22:16Z",

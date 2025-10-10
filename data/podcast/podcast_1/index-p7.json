@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2022Q4e06",
       "id": "[object Object]",
       "title": "[開槓好不好] 呀！《First Love 初戀》Netflix 話題劇不暴雷觀影體驗",
       "pub_date": "2022-12-27T12:19:12Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q4e05",
       "id": "[object Object]",
       "title": "寒流注意，雞蛋糕與你共勉之！",
       "pub_date": "2022-12-16T15:50:55Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q4e04",
       "id": "[object Object]",
       "title": "《城門城門幾丈高》第 13 集 錢不是問題，問題是沒錢",
       "pub_date": "2022-10-27T17:22:15Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q4e03",
       "id": "[object Object]",
       "title": "[草木燉雞] 憂鬱症有康復的可能嗎？ ft. 《草木談心》",
       "pub_date": "2022-10-14T08:35:16Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q4e02",
       "id": "[object Object]",
       "title": "[草木燉雞] 開始諮商之前經歷了什麼？！ ft. 《草木談心》",
       "pub_date": "2022-10-06T03:21:52Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q4e01",
       "id": "[object Object]",
       "title": "[小鬱好不好] 節目第六季，2022 年進入 Q4 了啊啊啊！",
       "pub_date": "2022-10-06T02:49:10Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q2e03",
       "id": "[object Object]",
       "title": "[小鬱好不好] 這場演講沒有PPT，我希望你可以帶走你記得的內容就好",
       "pub_date": "2022-04-18T23:01:00Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q2e02",
       "id": "[object Object]",
       "title": "[小鬱好不好] 今天，我要演講的題目是……",
       "pub_date": "2022-04-07T23:01:00Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q1e01",
       "id": "[object Object]",
       "title": "[小鬱好不好] 2022，回顧 2020 的《想見你》之後",
       "pub_date": "2022-03-19T19:16:11Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2022Q1e16",
       "id": "[object Object]",
       "title": "[草木燉雞] 憂鬱症症狀長怎樣？ ft. 《草木談心》",
       "pub_date": "2022-01-10T23:00:00Z",

@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 16,
   "total_pages": 2,
-  "updated_at": "2025-10-10T05:53:46Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2021Q4e15",
       "id": "[object Object]",
       "title": "《如何做出爆紅Podcast？》Clubhouse 線上讀書會 Live Podcast ft. 傑西大叔 與 小聯盟好朋友們",
       "pub_date": "2021-10-14T04:40:41Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e14",
       "id": "[object Object]",
       "title": "雞蛋糕幕後說：Live Podcast 按下錄音鍵之後，一切都是細節 ft. 這裡胡說 傑西大叔 X 彼岸薄荷 狐叔",
       "pub_date": "2021-03-30T09:07:13Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e12",
       "id": "[object Object]",
       "title": "[Podcasters與他們的產物] 為什麼工作坊名字那麼長？ ft. Ubi、阿海",
       "pub_date": "2021-03-15T01:34:32Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e11",
       "id": "[object Object]",
       "title": "[Podcasters與他們的產物] 你的聲音很有故事，只是你不知道 ft. Ubi 阿海",
       "pub_date": "2021-03-11T06:36:18Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e11",
       "id": "[object Object]",
       "title": "雞蛋糕幕後說：Live Podcast 在你按下錄音鍵之前 ft. 這裡胡說 傑西大叔 X 彼岸薄荷 狐叔",
       "pub_date": "2021-02-22T16:08:25Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2021Q1e10",
       "id": "[object Object]",
       "title": "Live Podcast Case 004 書店開放式空間講座收音：2020/11/07 謝依婷醫師《我們的孩子在呼救》新書分享會",
       "pub_date": "2021-02-22T13:57:54Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e09",
       "id": "[object Object]",
       "title": "Live Podcast 可以是種充滿有機魅力的創作型態 ft. 伯錚 aka 剛好是展演企劃的超熱情podcast聽眾",
       "pub_date": "2020-12-25T10:15:04Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e08",
       "id": "[object Object]",
       "title": "Live Podcast Case 003 大樓內多功能電腦教室收音：2020/10/18《小柔的最後一天》體驗式桌遊－Podcaster里民服務處專場",
       "pub_date": "2020-11-08T12:24:08Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e07",
       "id": "[object Object]",
       "title": "Live Podcast Case 002 青年旅館地下室房間收音：2020/10/17 Podcast 里民大會會後感想IG快閃直播精華、百靈果台南佈道大會活動預告",
       "pub_date": "2020-11-08T12:19:30Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e06",
       "id": "[object Object]",
       "title": "Live Podcast Case 001 開放會議室演講收音：2020/08/09 高雄「開Pod」分享會",
       "pub_date": "2020-11-08T12:14:35Z",

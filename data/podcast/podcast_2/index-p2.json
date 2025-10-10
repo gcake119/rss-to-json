@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 16,
   "total_pages": 2,
-  "updated_at": "2025-10-10T05:53:46Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2020Q4e04",
       "id": "[object Object]",
       "title": "[Kakudan。祭敘] 11/07-11/08 邀請你來佳平聽原住民青年說部落的故事 ft.法法漾播客 Ubi",
       "pub_date": "2020-11-03T23:01:11Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e03",
       "id": "[object Object]",
       "title": "雞蛋糕幕後說：關於故事怎麼說，不藏私、全部告訴你",
       "pub_date": "2020-11-03T23:01:11Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e05",
       "id": "[object Object]",
       "title": "雞蛋糕幕後說：遠距網路通訊錄音和剪輯想法 ft. 法法漾播客 Ubi [KAKUDAN] 活動聯名特輯",
       "pub_date": "2020-11-03T23:01:11Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e02",
       "id": "[object Object]",
       "title": "Firstory 首場 #Podty 實體活動 出席名額快閃抽獎 (10/23 12:00截止)",
       "pub_date": "2020-10-21T16:07:11Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e02",
       "id": "[object Object]",
       "title": "雞蛋糕的新嘗試：引導和記錄眼前的聲音故事",
       "pub_date": "2020-10-06T13:59:16Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2020Q4e01",
       "id": "[object Object]",
       "title": "雞蛋糕四界走：戳戳孵蛋中的未來Podcaster，讓所有故事破蛋而出",
       "pub_date": "2020-10-02T12:39:22Z",

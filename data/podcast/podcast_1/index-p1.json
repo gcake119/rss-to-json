@@ -12,9 +12,10 @@
   "page_size": 10,
   "total_items": 196,
   "total_pages": 20,
-  "updated_at": "2025-10-10T05:53:45Z",
+  "updated_at": "2025-10-10T10:53:27Z",
   "items": [
     {
+      "slug": "2025Q3e03",
       "id": "[object Object]",
       "title": "建立陪伴者小隊，維持人際連結",
       "pub_date": "2025-08-08T23:02:48Z",
@@ -27,6 +28,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2025Q3e02",
       "id": "[object Object]",
       "title": "六年多才發現是躁鬱症？請以「延遲診斷」取代「誤診」",
       "pub_date": "2025-07-25T23:01:53Z",
@@ -39,6 +41,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2025Q3e01",
       "id": "[object Object]",
       "title": "好久不見，節目簡介文字改了",
       "pub_date": "2025-07-18T23:01:55Z",
@@ -51,6 +54,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q4e02",
       "id": "[object Object]",
       "title": "[小鬱好不好] 憂鬱症的常見比喻",
       "pub_date": "2024-10-18T12:38:44Z",
@@ -63,6 +67,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q3e01",
       "id": "[object Object]",
       "title": "[小鬱好不好] 最好的一年。小新生日快樂，阿嘟嘟謝謝你！",
       "pub_date": "2024-09-30T11:46:33Z",
@@ -75,6 +80,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q2e18",
       "id": "[object Object]",
       "title": "[小鬱好不好] 雞蛋糕開刀去-2：選擇全自費術式的理由，面對手術風險的思考",
       "pub_date": "2024-06-21T04:16:40Z",
@@ -87,6 +93,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q2e17",
       "id": "[object Object]",
       "title": "[草木燉雞] 單元同名主題曲",
       "pub_date": "2024-06-07T13:08:12Z",
@@ -99,6 +106,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q2e16",
       "id": "[object Object]",
       "title": "[燒酒雞乾杯] 單元同名主題曲",
       "pub_date": "2024-06-07T13:01:27Z",
@@ -111,6 +119,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q2e15",
       "id": "[object Object]",
       "title": "[魚蛋話燒] 單元同名主題曲",
       "pub_date": "2024-06-06T04:55:45Z",
@@ -123,6 +132,7 @@
       "permalink": "#podcast/objectObject"
     },
     {
+      "slug": "2024Q2e14",
       "id": "[object Object]",
       "title": "《喂喂你還好不好》節目同名主題曲",
       "pub_date": "2024-06-04T12:14:36Z",
