@@ -43,6 +43,7 @@ jobs:
             git push
           else
             echo "No Podcast_1 JSON changes to commit."
+          fi
 
   podcast_2:
     runs-on: ubuntu-latest
@@ -81,6 +82,7 @@ jobs:
             git push
           else
             echo "No Podcast_2 JSON changes to commit."
+          fi
 
   newsletter_1:
     runs-on: ubuntu-latest
@@ -124,6 +126,7 @@ jobs:
             git push
           else
             echo "No Newsletter_1 JSON changes to commit."
+          fi
 
   newsletter_2:
     runs-on: ubuntu-latest
@@ -167,3 +170,4 @@ jobs:
             git push
           else
             echo "No Newsletter_2 JSON changes to commit."
+          fi
