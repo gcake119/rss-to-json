@@ -1,15 +1,14 @@
-name: RSS to JSON (Generate Only)
+name: RSS to JSON (Parallel Generate Only)
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # 每 6 小時執行一次
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}
 
 jobs:
-  build-json:
+  podcast_1:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,16 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Podcast 1
       - name: Podcast_1 RSS → JSON (skip on error)
-        env:
-          FEED_URL: https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh
-          OUT_DIR: data/podcast/podcast_1
-        continue-on-error: true
         run: |
-          mkdir -p "$OUT_DIR"
+          mkdir -p data/podcast/podcast_1
           set +e
-          node scripts/rss_to_json_podcast.js --feed "$FEED_URL" --out "$OUT_DIR"
+          node scripts/rss_to_json_podcast.js --feed "https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh" --out "data/podcast/podcast_1"
           code=$?
           set -e
           if [ $code -ne 0 ]; then
@@ -39,16 +33,37 @@ jobs:
             exit 0
           fi
 
-      # Podcast 2
-      - name: Podcast_2 RSS → JSON (skip on error)
-        env:
-          FEED_URL: https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1
-          OUT_DIR: data/podcast/podcast_2
-        continue-on-error: true
+      - name: Commit Podcast_1 JSON
         run: |
-          mkdir -p "$OUT_DIR"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/podcast/podcast_1/)" ]; then
+            git add data/podcast/podcast_1/
+            git commit -m "chore: update Podcast_1 JSON"
+            git push
+          else
+            echo "No Podcast_1 JSON changes to commit."
+
+  podcast_2:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Podcast_2 RSS → JSON (skip on error)
+        run: |
+          mkdir -p data/podcast/podcast_2
           set +e
-          node scripts/rss_to_json_podcast.js --feed "$FEED_URL" --out "$OUT_DIR"
+          node scripts/rss_to_json_podcast.js --feed "https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1" --out "data/podcast/podcast_2"
           code=$?
           set -e
           if [ $code -ne 0 ]; then
@@ -56,59 +71,99 @@ jobs:
             exit 0
           fi
 
-      # Newsletter 1
-      - name: Newsletter_1 Substack RSS → JSON (fallback to Paragraph)
-        env:
-          FEED_URL: https://wwhowbuhow.substack.com/feed
-          OUT_DIR: data/newsletter/newsletter_1
-        continue-on-error: true
-        run: |
-          mkdir -p "$OUT_DIR"
-          set +e
-          node scripts/rss_to_json_newsletter.js --feed "$FEED_URL" --out "$OUT_DIR"
-          code=$?
-          if [ $code -ne 0 ]; then
-            echo "[WARN] Substack RSS fetch/parse failed. Try Paragraph RSS as fallback."
-            node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@wwhowbuhow/rss" --out "$OUT_DIR"
-            code2=$?
-            if [ $code2 -ne 0 ]; then
-              echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
-              exit 0
-            fi
-          fi
-          set -e
-
-      # Newsletter 2
-      - name: Newsletter_2 Substack RSS → JSON (fallback to Paragraph)
-        env:
-          FEED_URL: https://taiweb3.substack.com/feed
-          OUT_DIR: data/newsletter/newsletter_2
-        continue-on-error: true
-        run: |
-          mkdir -p "$OUT_DIR"
-          set +e
-          node scripts/rss_to_json_newsletter.js --feed "$FEED_URL" --out "$OUT_DIR"
-          code=$?
-          if [ $code -ne 0 ]; then
-            echo "[WARN] Substack RSS fetch/parse failed. Try Paragraph RSS as fallback."
-            node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@tw3/rss" --out "$OUT_DIR"
-            code2=$?
-            if [ $code2 -ne 0 ]; then
-              echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
-              exit 0
-            fi
-          fi
-          set -e
-
-      # Commit changes if any
-      - name: Commit JSON outputs (only when changed)
+      - name: Commit Podcast_2 JSON
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data/)" ]; then
-            git add data/
-            git commit -m "chore: update JSON from podcast/newsletter RSS (skip failed feeds)"
+          if [ -n "$(git status --porcelain data/podcast/podcast_2/)" ]; then
+            git add data/podcast/podcast_2/
+            git commit -m "chore: update Podcast_2 JSON"
             git push
           else
-            echo "No JSON changes to commit."
+            echo "No Podcast_2 JSON changes to commit."
+
+  newsletter_1:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Newsletter_1 Substack RSS → JSON (fallback to Paragraph)
+        run: |
+          mkdir -p data/newsletter/newsletter_1
+          set +e
+          node scripts/rss_to_json_newsletter.js --feed "https://wwhowbuhow.substack.com/feed" --out "data/newsletter/newsletter_1"
+          code=$?
+          if [ $code -ne 0 ]; then
+            echo "[WARN] Substack RSS failed. Try Paragraph RSS."
+            node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@wwhowbuhow/rss" --out "data/newsletter/newsletter_1"
+            code2=$?
+            if [ $code2 -ne 0 ]; then
+              echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
+              exit 0
+            fi
           fi
+          set -e
+
+      - name: Commit Newsletter_1 JSON
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/newsletter/newsletter_1/)" ]; then
+            git add data/newsletter/newsletter_1/
+            git commit -m "chore: update Newsletter_1 JSON"
+            git push
+          else
+            echo "No Newsletter_1 JSON changes to commit."
+
+  newsletter_2:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Newsletter_2 Substack RSS → JSON (fallback to Paragraph)
+        run: |
+          mkdir -p data/newsletter/newsletter_2
+          set +e
+          node scripts/rss_to_json_newsletter.js --feed "https://taiweb3.substack.com/feed" --out "data/newsletter/newsletter_2"
+          code=$?
+          if [ $code -ne 0 ]; then
+            echo "[WARN] Substack RSS failed. Try Paragraph RSS."
+            node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@tw3/rss" --out "data/newsletter/newsletter_2"
+            code2=$?
+            if [ $code2 -ne 0 ]; then
+              echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
+              exit 0
+            fi
+          fi
+          set -e
+
+      - name: Commit Newsletter_2 JSON
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/newsletter/newsletter_2/)" ]; then
+            git add data/newsletter/newsletter_2/
+            git commit -m "chore: update Newsletter_2 JSON"
+            git push
+          else
+            echo "No Newsletter_2 JSON changes to commit."
