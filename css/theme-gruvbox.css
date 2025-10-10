@@ -1,0 +1,12 @@
+body { background:#282828; color:#ebdbb2; }
+header { background:#3c3836; border-bottom:1px solid #665c54; }
+nav a { color:#facc15; }
+nav a:hover { color:#38bdf8; }
+.card { background:#32302f; border:1px solid #665c54; }
+.card h3 { color:#facc15; }
+.meta { color:#a89984; }
+a { color:#38bdf8; }
+a:hover { color:#ec4899; }
+iframe.podcast-player { background:#000; }
+footer { background:#3c3836; color:#a89984; }
+.badge { border-color:#a89984; color:#a89984; }
