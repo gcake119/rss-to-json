@@ -138,6 +138,7 @@ for (const it of items) {
 
   // Push to summary
   episodes.push({
+    slug: filename.replace(/\.json$/, ''),
     id: guid,
     title,
     pub_date: pubISO,
@@ -277,4 +278,3 @@ function genGUID(it) {
 async function ensureDir(dir) {
   await fs.promises.mkdir(dir, { recursive: true });
 }
-

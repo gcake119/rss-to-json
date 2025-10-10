@@ -1,7 +1,3 @@
-// scripts/rss_to_json_newsletter.js
-// Usage:
-// node scripts/rss_to_json_newsletter.js --feed "https://wwhowbuhow.substack.com/feed" --out "data/newsletter/newsletter_1"
-
 import fs from 'fs';
 import path from 'path';
 import process from 'process';
@@ -20,20 +16,31 @@ if (!FEED_URL) {
 }
 await ensureDir(OUT_DIR);
 
-// 1) 抓取 RSS，附帶 User-Agent/Accept 以避免 403
-const res = await fetch(FEED_URL, {
-  headers: {
-    'User-Agent': 'Mozilla/5.0 (Node.js CI Fetcher; +https://github.com/actions)',
-    'Accept': 'application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8'
+// 判斷 feed 是本地 xml 檔還是 http 連結
+let stream;
+if (/^https?:\/\//i.test(FEED_URL)) {
+  // 1) 抓取 RSS（網路 fetch，附 UA header）
+  const res = await fetch(FEED_URL, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Node.js Fetch)',
+      'Accept': 'application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8'
+    }
+  });
+  if (!res.ok) {
+    console.error('Fetch failed:', res.status, res.statusText);
+    process.exit(1);
   }
-});
-if (!res.ok) {
-  console.error('Fetch failed:', res.status, res.statusText);
-  process.exit(1);
+  stream = res.body;
+} else {
+  // 2) 本地 xml 檔案（fs.createReadStream）
+  if (!fs.existsSync(FEED_URL)) {
+    console.error('Local XML file not found:', FEED_URL);
+    process.exit(1);
+  }
+  stream = fs.createReadStream(FEED_URL, { encoding: 'utf8' });
 }
-const stream = res.body;
 
-// 2) 用 feedparser 解析
+// feedparser 解析
 const feedparser = new FeedParser();
 const items = await new Promise((resolve, reject) => {
   const acc = [];
@@ -43,15 +50,13 @@ const items = await new Promise((resolve, reject) => {
       acc.push(item);
     }
   });
-  feedparser.on('meta', function(meta) {
-    // 可視需要保留 meta
-  });
+  feedparser.on('meta', function(meta) {});
   feedparser.on('end', () => resolve(acc));
   feedparser.on('error', reject);
   stream.pipe(feedparser);
 });
 
-// 3) show（channel/meta）
+// show（channel/meta）
 const meta = feedparser.meta || {};
 const show = {
   title: meta.title || null,
@@ -62,37 +67,23 @@ const show = {
   updated_at: formatISO(new Date())
 };
 
-// 4) 逐篇轉 json
+// 逐篇轉 json
 const summaries = [];
-
 for (const it of items) {
   const guid = it.guid || it.link || hash(`${it.title}-${it.date}-${it.link}`);
   const title = it.title || null;
   const link = it.link || null;
   const pubISO = it.date ? formatISO(new Date(it.date)) : formatISO(new Date());
   const author = it.author || it.creator || show.author || null;
-
-  // 內容：優先 description（feedparser 會將 content:encoded/description 解析到這些欄位）
   const contentHTML = it.description || it.summary || '';
   const contentText = toText(contentHTML);
-
-  // 封面圖：HTML 中第一張圖，退回 show.image
   const cover = extractFirstImage(contentHTML) || show.image || null;
-
-  // voiceover：enclosures 或內容中的 .mp3
   const voiceover = detectVoiceover(it, contentHTML);
-
-  // tags：categories
   const tags = Array.isArray(it.categories) ? it.categories.filter(Boolean) : [];
-
-  // slug：link 最後段或 guid
   const slug = buildSlug(title, link, guid);
-
-  // 檔名：YYYY-MM-DD_slug.json
   const filename = filenameFromDateSlug(pubISO, slug);
   const outPath = path.join(OUT_DIR, filename);
 
-  // 單篇 JSON
   const article = {
     id: guid,
     title,
@@ -108,14 +99,11 @@ for (const it of items) {
     show,
     updated_at: formatISO(new Date())
   };
-
-  // checksum 判斷差異
   const checksum = computeChecksum({
     title, pub_date: pubISO, link, cover, voiceover, content_html: contentHTML
   });
   article.meta = { checksum };
 
-  // 新增或變更才覆寫
   const needWrite = await shouldWrite(outPath, checksum);
   if (needWrite) {
     await fs.promises.writeFile(outPath, JSON.stringify(article, null, 2), 'utf8');
@@ -124,7 +112,6 @@ for (const it of items) {
     console.log(`Skip (no change): ${filename}`);
   }
 
-  // 摘要（列表用）
   summaries.push({
     id: guid,
     slug,
@@ -138,12 +125,11 @@ for (const it of items) {
   });
 }
 
-// 5) 重建 index 分頁（每次覆蓋）
+// 重建 index
 summaries.sort((a, b) => new Date(b.pub_date) - new Date(a.pub_date));
 const pageSize = 10;
 const total = summaries.length;
 const totalPages = Math.max(1, Math.ceil(total / pageSize));
-
 for (let p = 1; p <= Math.max(1, totalPages); p++) {
   const slice = summaries.slice((p - 1) * pageSize, p * pageSize);
   const index = {
@@ -160,8 +146,7 @@ for (let p = 1; p <= Math.max(1, totalPages); p++) {
   console.log(`Rebuilt index: index-p${p}.json`);
 }
 
-console.log('Substack RSS → JSON (feedparser + UA) done');
-
+console.log('Substack RSS → JSON (feedparser, local xml supported) done');
 
 // --------------- Helpers ---------------
 function getArg(k) {
