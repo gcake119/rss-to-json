@@ -1,1 +1,72 @@
+name: RSS to JSON (Generate Only)
 
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小時執行一次
+  workflow_dispatch: {}      # 允許手動觸發
+
+jobs:
+  build-json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 允許 commit 回 repo
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ---------- Podcast 1 ----------
+      - name: Podcast_1 RSS → JSON
+        env:
+          FEED_URL: https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh
+          OUT_DIR: data/podcast/podcast_1
+        run: |
+          mkdir -p "$OUT_DIR"
+          node scripts/rss_to_json_podcast.js --feed "$FEED_URL" --out "$OUT_DIR"
+
+      # ---------- Podcast 2 ----------
+      - name: Podcast_2 RSS → JSON
+        env:
+          FEED_URL: https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1
+          OUT_DIR: data/podcast/podcast_2
+        run: |
+          mkdir -p "$OUT_DIR"
+          node scripts/rss_to_json_podcast.js --feed "$FEED_URL" --out "$OUT_DIR"
+
+      # ---------- Newsletter 1 ----------
+      - name: Newsletter_1 RSS → JSON
+        env:
+          FEED_URL: https://wwhowbuhow.substack.com/feed
+          OUT_DIR: data/newsletter/newsletter_1
+        run: |
+          mkdir -p "$OUT_DIR"
+          node scripts/rss_to_json_newsletter.js --feed "$FEED_URL" --out "$OUT_DIR"
+
+      # ---------- Newsletter 2 ----------
+      - name: Newsletter_2 RSS → JSON
+        env:
+          FEED_URL: https://taiweb3.substack.com/feed
+          OUT_DIR: data/newsletter/newsletter_2
+        run: |
+          mkdir -p "$OUT_DIR"
+          node scripts/rss_to_json_newsletter.js --feed "$FEED_URL" --out "$OUT_DIR"
+
+      # ---------- Commit changes if any ----------
+      - name: Commit JSON outputs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add data/
+            git commit -m "chore: update JSON from podcast/newsletter RSS (4 feeds)"
+            git push
+          else
+            echo "No JSON changes to commit."
+          fi
