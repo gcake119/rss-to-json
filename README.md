@@ -1,89 +1,103 @@
-# GCAKE.Space 專案進度與架構說明 2025/10/10 21:55
+# GCAKE.Space 雞蛋糕個人創作者網站專案進度總結 2025/10/11 05:44  
+**GitHub**：[gcake119/rss-to-json](https://github.com/gcake119/rss-to-json)  
+**測試站**：GitHub Pages 上部署，作為 IPFS/Storj 上鏈前之測試預覽
+
+---
 
 ## 專案目的
 
-以 ENS、IPFS、RSS feed（Podcast/Newsletter）及 Storj 的去中心化檔案服務，打造 GCAKE 的個人網路創作者平台。實作內容包含 Podcast 與電子報多源發佈、資料可公開存取、分發不中斷的自動化流程。
+- 利用 **ENS**、**IPFS**、**RSS feed**（Podcast、Newsletter）、**Storj** 等去中心化技術
+- 建立雞蛋糕（GCAKE）的內容創作者個人網站
+- 特色：Podcast/電子報內容自動匯入、跨平台長備援、靜態網站免伺服器、分發不中斷
 
 ---
 
 ## 網站架構
 
-- **SPA 前端**
-  - 純原生 JavaScript 單頁應用（無框架），hash 路由多頁分流
-  - 響應式設計（RWD），Gruvbox 暗色主題，卡片式排版
-  
-- **內容展示**
-  - Podcast／Newsletter 均為卡片列表，細節頁點擊展開
-  - Podcast：嵌入 Firstory 播放器，封面自動顯示 it.image → show.image
-  - Newsletter：主視覺大圖＋結構化內文，cover 作為封面圖來源
+- **前端：**  
+  - 純原生 JavaScript SPA 構建，hash 路由多頁分流
+  - 響應式設計（RWD），Gruvbox 暗色系，卡片式 UI
+  - Podcast/Newsletter 完整分頁與詳細列表、單篇展開各自渲染
 
-- **語音朗讀／voiceover 升級**
-  - Newsletter 詳細頁將增設語音播放器，音檔放於 Storj（如 `newsletter_1/voiceover/`）
-  - 前端會根據 JSON 資料中的 voiceover 欄位自動顯示播放器（新功能開發中）
+- **資料流：**
+  - RSS 自動轉 JSON，後端完全靜態，fetch 加載分頁與單篇
+  - Podcast 列表與單集嵌入 Firstory 播放器
+  - Newsletter 支援主圖、語音欄位、純文字索引、內文插圖優化
+
+- **測試與發佈：**
+  - GitHub Pages 作為 CI/CD 開發主站（靜態測試）
+  - 未來正式服務將 IPFS、Storj 作為分發與主存儲層，GitHub Pages 作備援
 
 ---
 
 ## 資料結構
 
 - **Podcast**
-  - `index-pN.json`：卡片分頁資料
-  - 詳細檔名如 `2025Q3e03.json`，欄位有 slug, title, pub_date, audio, image, duration, season, episode, tags
+  - `index-pN.json`：分頁卡片內容，分期分頁
+  - 單集：`{年季}{集}.json`（例：2025Q3e03.json），含 slug, title, pub_date, audio, image, duration, tags等
 
 - **Newsletter**
-  - `index-pN.json`：卡片分頁資料
-  - 詳細檔名如 `YYYY-MM-DD_slug.json`，欄位有 slug, title, cover, summary, pub_date, tags, content_html, content_text
-  - **voiceover 規劃**：mp3 檔存放於 storj/newsletter_X/voiceover/，JSON 未來會新增 voiceover 欄位（url, duration, format 等）
+  - `index-pN.json`：分頁列表
+  - 詳細：`YYYY-MM-DD_slug.json`，欄位有 slug, title, cover, summary, pub_date, tags, content_html, content_text
+  - **預計 voiceover 欄位**：對應 mp3 放 Storj 上
 
-- **資料分層**
+- **資料目錄分層**
   - `/data/podcast/{podcast_N}/`
   - `/data/newsletter/{newsletter_N}/`
   - `/data/voiceover/{newsletter_N}/`
-  - 音檔、資料檔自動／手動上傳於 Storj，網站直接讀取 Storj 公網 URL
 
-- **GitHub Actions 自動化**
-  - 定時抓取 RSS 並產生 JSON 檔至 `/data/`
-  - 【規劃中】JSON 檔也會自動同步上傳 Storj，網站即時讀取
-
----
-
-## 目前已完成
-
-- Podcast／Newsletter 列表、細節頁渲染，前後端結構完整
-- Podcast Firstory 播放器嵌入、封面自動切換
-- Newsletter 內文插圖自動限寬高、去重與內容清理
-- RSS to JSON 腳本穩定，slug/cover/image 欄位自動化對齊前端需求
-- GitHub Actions 持續部署與定時自動更新
-- Fallback 機制部署、YAML 與 Shell 腳本完善
+- **GitHub Actions**
+  - 自動抓 RSS 產生 JSON，JSON（未來音訊檔）同步 Storj/Pages
+  - YAML+Shell 腳本自動處理分頁、slug、欄位正規化
 
 ---
 
-## 進行中事項
+## 已完成重點
 
-- **資料結構升級**
-  - Newsletter JSON 詳細檔將擴充 voiceover 欄位，與 Storj 音檔同步對應
-- **前端開發**
-  - 語音播放器渲染函式增加，根據 JSON voiceover 欄位自動顯示
+- SPA 架構就緒，多路由與 hash 分頁正常
+- Podcast 與 Newsletter 卡片分頁、詳細內文、主圖皆能正常渲染
+- Podcast 支援 Firstory 播放器 iframe 嵌入/與 show 封面自動切換
+- Newsletter 內文圖像限寬優化、去重、雜訊內容清理準確
+- Newsletter 詳細頁資料結構支援 voiceover 欄位，前端預留語音播放器生成邏輯
+- 完整 RSS to JSON 腳本，slug/cover/image 各欄位自動對齊前端渲染
+- GitHub Actions/CI 持續部署與資料更新流程穩定
+- Fallback 機制，Podcast/Newsletter 多 RSS 來源自動合併資料
+
+---
+
+## 已完成測試/驗證項目
+
+- ✔️ GitHub Pages 靜態網站正式部署，index-pN.json 分頁與單篇 API 資料皆測試正常
+- ✔️ 呈現多來源（Firstory, Substack, Paragraph）內容均 OK，分頁 UI 完整可瀏覽
+- ✔️ Podcast/Newsletter 內容同步拉取、資料結構統一
+- ✔️ fallback RSS 來源抓取異常時能補回主資料，不覆蓋既有內容
+- ✔️ SPA 響應式排版、主題切換功能運作無誤
+
+---
+
+## 進行中／待辦事項
+
+- **資料結構升級**  
+  - Newsletter 詳細 JSON 將擴充 voiceover 欄位（音檔 Storj）
+- **前端功能**
+  - 語音播放器渲染函式設計，根據 JSON 自動顯示 voiceover 聲音
+  - UI 持續優化：動畫、主題切換功能擴充、標籤過濾與全文搜尋
 - **Storj 整合**
-  - 音檔、資料檔 JSON 都規劃同步傳至 Storj，網站讀取 Storj 公網址
-  - CORS 設定確保跨站直接存取音訊
-- **UI/功能加強**
-  - 動畫、主題切換、OGP/meta 標籤、標籤過濾、全文搜尋系統等持續進行
+  - 音檔和 JSON 同步傳到 Storj，網站直接跨域讀取 Storj 公網路 URL
+- **SEO/OGP**
+  - 自動化靜態快照、meta 產生，助攻搜尋與社群預覽
+- **資料聚合/自動去重**
+  - 跨平台主 key 比對、API 多來源自動合併與重覆內容同步排除
+- **API／外掛互動**
+  - 規劃留言互動、社群插件等額外模組
+- **多語系、社群小工具、安全/a11y 提升**
 
 ---
 
-## 待辦事項
+## 結論與現況
 
-- Works／FAQ／自定內容分頁完善
-- SEO 靜態快照、OGP/meta 自動補全
-- 內容聚合、去重與多平台主 key 同步比對
-- API／外掛擴展（如留言互動、插件接口）
-- podcast/newsletter 資料合併、比對與去重自動化
-- 多語系、社群小工具、安全存取、Accessibility(a11y)
-
----
-
-### 全站現況
-
-目前網站內容更新、前後端整合、多平台備援機制穩定，voiceover 結構與 Storj 檔案同步成為下一階段重點，預計帶來語音媒體內容升級與多元備援發佈力。
+**GCAKE.Space 創作者個站，已達成內容自動更新、多平台備援、前後端一體化流程。**  
+現已穩定運行於 GitHub Pages、測試過 IPFS 傳播可行性，下一步主攻 voiceover 音訊升級與 Storj 直連存取改善。  
+專案持續擴充，API、互動服務與內容搜尋為下一階段成長重點。
 
 ---

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paragraph 渲染測試</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-gruvbox.css">
+</head>
+<body>
+  <header>
+    <h1>Paragraph RSS 渲染測試頁</h1>
+    <nav>
+      <a href="#paragraph">Paragraph 列表</a>
+    </nav>
+  </header>
+  <main id="app"></main>
+  <footer>
+    <p>© 2025 渲染測試</p>
+  </footer>
+  <script type="module">
+  	window.history.replaceState({}, '', '/');
+    import { renderParagraphList, renderParagraphDetail } from './js/paragraph.js';
+
+    // 基本 SPA hash 路由（純測試版）
+    async function render() {
+      const hash = location.hash.replace('#','');
+      const app = document.getElementById('app');
+      try {
+        if (hash.startsWith('viewParagraph')) {
+          // #viewParagraph?dir=data/newsletter/newsletter_p1&slug=abc123
+          const [_, query] = hash.split('?');
+          const params = new URLSearchParams(query);
+          const dir = params.get('dir') || 'data/newsletter/newsletter_p1';
+          const slug = params.get('slug');
+          app.innerHTML = await renderParagraphDetail(dir, slug);
+        } else {
+          // Paragraph 測試列表
+          app.innerHTML = await renderParagraphList('data/newsletter/newsletter_p1', '#paragraph');
+        }
+      } catch(e) {
+        app.innerHTML = `<div class="card"><p>載入失敗：${e.message||e}</p></div>`;
+      }
+    }
+    window.addEventListener('hashchange', render);
+    document.addEventListener('DOMContentLoaded', render);
+  </script>
+</body>
+</html>
