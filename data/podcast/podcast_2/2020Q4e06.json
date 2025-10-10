@@ -3,7 +3,7 @@
   "guid": "[object Object]",
   "title": "Live Podcast Case 001 開放會議室演講收音：2020/08/09 高雄「開Pod」分享會",
   "author": "雞蛋糕 GCAKE",
-  "pub_date": "2020-11-08T20:14:35+08:00",
+  "pub_date": "2020-11-08T12:14:35Z",
   "season": 1,
   "episode": 6,
   "quarter": "2020Q4",
@@ -28,8 +28,8 @@
     "image": "https://d3mww1g1pfq2pt.cloudfront.net/Avatar/ckfqmqknj6k7e0800m9lk8at1/1601642598286.png",
     "link": "https://gcake-delivery.firstory.io"
   },
-  "updated_at": "2025-10-10T20:11:55+08:00",
+  "updated_at": "2025-10-10T16:50:52Z",
   "meta": {
-    "checksum": "fe3fcda74fd22c15167f426a211da9350a7ffac00ae2c40f9e0c8b3f56847a37"
+    "checksum": "6e7d5c6aa11698b0d44422c5e3053b1de5f69f9a81c03c81f9580ff25137bb7f"
   }
 }
