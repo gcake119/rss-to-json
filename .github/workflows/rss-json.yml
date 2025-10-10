@@ -2,14 +2,14 @@ name: RSS to JSON (Generate Only)
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # 每 6 小時執行一次
-  workflow_dispatch: {}      # 允許手動觸發
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
 
 jobs:
   build-json:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # 允許 commit 回 repo
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ---------- Podcast 1 ----------
+      # Podcast 1
       - name: Podcast_1 RSS → JSON (skip on error)
         env:
           FEED_URL: https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh
@@ -39,7 +39,7 @@ jobs:
             exit 0
           fi
 
-      # ---------- Podcast 2 ----------
+      # Podcast 2
       - name: Podcast_2 RSS → JSON (skip on error)
         env:
           FEED_URL: https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1
@@ -56,7 +56,7 @@ jobs:
             exit 0
           fi
 
-      # ---------- Newsletter 1 ----------
+      # Newsletter 1
       - name: Newsletter_1 Substack RSS → JSON (fallback to Paragraph)
         env:
           FEED_URL: https://wwhowbuhow.substack.com/feed
@@ -67,7 +67,6 @@ jobs:
           set +e
           node scripts/rss_to_json_newsletter.js --feed "$FEED_URL" --out "$OUT_DIR"
           code=$?
-          set -e
           if [ $code -ne 0 ]; then
             echo "[WARN] Substack RSS fetch/parse failed. Try Paragraph RSS as fallback."
             node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@wwhowbuhow/rss" --out "$OUT_DIR"
@@ -77,8 +76,9 @@ jobs:
               exit 0
             fi
           fi
+          set -e
 
-      # ---------- Newsletter 2 ----------
+      # Newsletter 2
       - name: Newsletter_2 Substack RSS → JSON (fallback to Paragraph)
         env:
           FEED_URL: https://taiweb3.substack.com/feed
@@ -89,7 +89,6 @@ jobs:
           set +e
           node scripts/rss_to_json_newsletter.js --feed "$FEED_URL" --out "$OUT_DIR"
           code=$?
-          set -e
           if [ $code -ne 0 ]; then
             echo "[WARN] Substack RSS fetch/parse failed. Try Paragraph RSS as fallback."
             node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@tw3/rss" --out "$OUT_DIR"
@@ -99,8 +98,9 @@ jobs:
               exit 0
             fi
           fi
+          set -e
 
-      # ---------- Commit changes if any ----------
+      # Commit changes if any
       - name: Commit JSON outputs (only when changed)
         run: |
           git config user.name  "github-actions[bot]"
