@@ -1,14 +1,15 @@
-name: RSS to JSON (Parallel Generate Only)
+name: RSS to JSON (Generate and Merge Fallback)
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"   # 每 6 小時執行一次
   workflow_dispatch: {}
 
 jobs:
-  podcast_1:
+  build-json:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,11 +22,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Podcast 1
       - name: Podcast_1 RSS → JSON (skip on error)
+        env:
+          FEED_URL: https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh
+          OUT_DIR: data/podcast/podcast_1
+        continue-on-error: true
         run: |
-          mkdir -p data/podcast/podcast_1
+          mkdir -p "$OUT_DIR"
           set +e
-          node scripts/rss_to_json_podcast.js --feed "https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh" --out "data/podcast/podcast_1"
+          node scripts/rss_to_json_podcast.js --feed "$FEED_URL" --out "$OUT_DIR"
           code=$?
           set -e
           if [ $code -ne 0 ]; then
@@ -33,38 +39,16 @@ jobs:
             exit 0
           fi
 
-      - name: Commit Podcast_1 JSON
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data/podcast/podcast_1/)" ]; then
-            git add data/podcast/podcast_1/
-            git commit -m "chore: update Podcast_1 JSON"
-            git push
-          else
-            echo "No Podcast_1 JSON changes to commit."
-          fi
-
-  podcast_2:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
-        run: npm ci
-
+      # Podcast 2
       - name: Podcast_2 RSS → JSON (skip on error)
+        env:
+          FEED_URL: https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1
+          OUT_DIR: data/podcast/podcast_2
+        continue-on-error: true
         run: |
-          mkdir -p data/podcast/podcast_2
+          mkdir -p "$OUT_DIR"
           set +e
-          node scripts/rss_to_json_podcast.js --feed "https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1" --out "data/podcast/podcast_2"
+          node scripts/rss_to_json_podcast.js --feed "$FEED_URL" --out "$OUT_DIR"
           code=$?
           set -e
           if [ $code -ne 0 ]; then
@@ -72,102 +56,69 @@ jobs:
             exit 0
           fi
 
-      - name: Commit Podcast_2 JSON
+      # Newsletter 1
+      - name: Newsletter_1 Substack RSS → JSON and MERGE fallback Paragraph RSS
+        env:
+          SUBSTACK_FEED: https://wwhowbuhow.substack.com/feed
+          SUBSTACK_DIR: data/newsletter/newsletter_1
+          PARAGRAPH_FEED: https://paragraph.xyz/@wwhowbuhow/rss
+          PARAGRAPH_DIR: data/newsletter/newsletter_p1
+        continue-on-error: true
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data/podcast/podcast_2/)" ]; then
-            git add data/podcast/podcast_2/
-            git commit -m "chore: update Podcast_2 JSON"
-            git push
-          else
-            echo "No Podcast_2 JSON changes to commit."
-          fi
-
-  newsletter_1:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Newsletter_1 Substack RSS → JSON (fallback to Paragraph)
-        run: |
-          mkdir -p data/newsletter/newsletter_1
+          mkdir -p "$SUBSTACK_DIR"
+          mkdir -p "$PARAGRAPH_DIR"
           set +e
-          node scripts/rss_to_json_newsletter.js --feed "https://wwhowbuhow.substack.com/feed" --out "data/newsletter/newsletter_1"
+          node scripts/rss_to_json_newsletter.js --feed "$SUBSTACK_FEED" --out "$SUBSTACK_DIR"
           code=$?
           if [ $code -ne 0 ]; then
-            echo "[WARN] Substack RSS failed. Try Paragraph RSS."
-            node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@wwhowbuhow/rss" --out "data/newsletter/newsletter_1"
+            echo "[WARN] Substack fetch failed. Try fallback Paragraph RSS."
+            node scripts/rss_to_json_newsletter.js --feed "$PARAGRAPH_FEED" --out "$PARAGRAPH_DIR"
             code2=$?
+            set -e
             if [ $code2 -ne 0 ]; then
               echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
               exit 0
             fi
+            # 合併 Paragraph RSS 的更新（Python or Node.js 腳本，僅新增比主 repo 最新的資料）
+            node scripts/newsletter_merge_fallback.js --primary "$SUBSTACK_DIR" --fallback "$PARAGRAPH_DIR"
           fi
           set -e
 
-      - name: Commit Newsletter_1 JSON
+      # Newsletter 2
+      - name: Newsletter_2 Substack RSS → JSON and MERGE fallback Paragraph RSS
+        env:
+          SUBSTACK_FEED: https://taiweb3.substack.com/feed
+          SUBSTACK_DIR: data/newsletter/newsletter_2
+          PARAGRAPH_FEED: https://paragraph.xyz/@tw3/rss
+          PARAGRAPH_DIR: data/newsletter/newsletter_p2
+        continue-on-error: true
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data/newsletter/newsletter_1/)" ]; then
-            git add data/newsletter/newsletter_1/
-            git commit -m "chore: update Newsletter_1 JSON"
-            git push
-          else
-            echo "No Newsletter_1 JSON changes to commit."
-          fi
-
-  newsletter_2:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Newsletter_2 Substack RSS → JSON (fallback to Paragraph)
-        run: |
-          mkdir -p data/newsletter/newsletter_2
+          mkdir -p "$SUBSTACK_DIR"
+          mkdir -p "$PARAGRAPH_DIR"
           set +e
-          node scripts/rss_to_json_newsletter.js --feed "https://taiweb3.substack.com/feed" --out "data/newsletter/newsletter_2"
+          node scripts/rss_to_json_newsletter.js --feed "$SUBSTACK_FEED" --out "$SUBSTACK_DIR"
           code=$?
           if [ $code -ne 0 ]; then
-            echo "[WARN] Substack RSS failed. Try Paragraph RSS."
-            node scripts/rss_to_json_newsletter.js --feed "https://paragraph.xyz/@tw3/rss" --out "data/newsletter/newsletter_2"
+            echo "[WARN] Substack fetch failed. Try fallback Paragraph RSS."
+            node scripts/rss_to_json_newsletter.js --feed "$PARAGRAPH_FEED" --out "$PARAGRAPH_DIR"
             code2=$?
+            set -e
             if [ $code2 -ne 0 ]; then
               echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
               exit 0
             fi
+            node scripts/newsletter_merge_fallback.js --primary "$SUBSTACK_DIR" --fallback "$PARAGRAPH_DIR"
           fi
           set -e
 
-      - name: Commit Newsletter_2 JSON
+      # Commit changes if any
+      - name: Commit JSON outputs (only when changed)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data/newsletter/newsletter_2/)" ]; then
-            git add data/newsletter/newsletter_2/
-            git commit -m "chore: update Newsletter_2 JSON"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: update JSON from podcast/newsletter RSS (skip failed feeds, merge fallback new items)"
             git push
           else
-            echo "No Newsletter_2 JSON changes to commit."
-          fi
+            echo "No JSON changes to commit."
