@@ -7,9 +7,10 @@
     "build:newsletter": "node scripts/rss_to_json_newsletter.js"
   },
   "dependencies": {
+    "date-fns": "^3.6.0",
     "fast-xml-parser": "^4.4.1",
+    "feedparser": "^2.2.10",
     "node-fetch": "^3.3.2",
-    "sanitize-html": "^2.13.0",
-    "date-fns": "^3.6.0"
+    "sanitize-html": "^2.13.0"
   }
 }
