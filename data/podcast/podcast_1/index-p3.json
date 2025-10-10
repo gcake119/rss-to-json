@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 3,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T20:11:48+08:00",
+  "items": [
+    {
+      "slug": "2024Q1e03",
+      "id": "[object Object]",
+      "title": "[魚蛋話燒] 小鬱陪伴者的壓力。如何建立緊急聯絡網？",
+      "pub_date": "2024-02-21T16:52:36+08:00",
+      "duration": "38:14",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/1llWBWoopGBs-FQ3FajPb.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clsvk2sia02n801u30xffbi39/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclsvk2sia02n901u3f6sm7kiv.mp3?v=1752029001413",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e02",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 自我照顧：好好吃飯，吃到親友想退群",
+      "pub_date": "2024-01-26T22:58:47+08:00",
+      "duration": "12:43",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/niqt3AVKTZ0sRz4ylGJpa.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clrurpzdc000301x5g7vn7quw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclrurpzdd000401x561ax3p4f.mp3?v=1759248288887",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e01",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 回答聽友問題：感覺諮商卡住了是正常的嗎？我該怎麼辦？推薦書：《化學課》Apple TV 有影集！",
+      "pub_date": "2024-01-19T22:03:58+08:00",
+      "duration": "39:01",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/H8bBzldQz4vFLDdqOJ0gN.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clrkpo37m00nn01v8dbve7nqx/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclrkpo37m00no01v8ccr25l1u.mp3?v=1760026313437",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e10",
+      "id": "[object Object]",
+      "title": "[魚蛋話燒] 魔幻的2023：我們的過渡與改變",
+      "pub_date": "2024-01-08T16:51:22+08:00",
+      "duration": "01:02:50",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/YptzjDIlc8Pq-O296TBuy.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clr4onac9042501wv1r6p4dce/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclr4onac9042601wv0a3k126k.mp3?v=1758571463461",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q4e09",
+      "id": "[object Object]",
+      "title": "[草木燉雞] 從不同角度談憂鬱症的痊癒 ft. 《草木談心》",
+      "pub_date": "2023-12-26T20:25:15+08:00",
+      "duration": "45:50",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/-Ym6kUj4zM45Vj3F0qcM7.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clqmbkkao00uo01vb1brfdkcf/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclqmbkkao00up01vb13bwb2xh.mp3?v=1759247214290",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q4e08",
+      "id": "[object Object]",
+      "title": "[燒酒雞乾杯] 抱怨也是種力量的展現！ ft.《心理師乾杯》阿寶",
+      "pub_date": "2023-12-08T22:06:26+08:00",
+      "duration": "42:06",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/rGcdgbt4PN55joR0st4me.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clpwp917q001b01169go291nj/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclpwp917q001c0116b8tafmww.mp3?v=1759246898044",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q4e07",
+      "id": "[object Object]",
+      "title": "[燒酒雞乾杯] 更換諮商師後，是否多了些可能？ ft.《心理師乾杯》阿寶",
+      "pub_date": "2023-11-18T10:36:09+08:00",
+      "duration": "01:13:07",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/-9tcM80MQDHPr6U4lZXlm.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clp3frugf02du01z57vw7huci/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclp3frugf02dv01z5crw33nou.mp3?v=1759247254383",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q3e06",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 當一個 podcaster 沒有錄音的時候。小新生日快樂！",
+      "pub_date": "2023-09-28T23:54:54+08:00",
+      "duration": "14:45",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/nz9MEbI_TNSkRwp64WL-o.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cln3cvvhk012s01ze3rnp5t2l/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcln3cvvhk012t01zeb2r5dlc9.mp3?v=1759248295989",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q3e05",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 近況更新：說不上好或不好，就停留在感受就好",
+      "pub_date": "2023-08-23T23:19:10+08:00",
+      "duration": "09:35",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/BoVWreG09TUBIVJWhKmUE.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cllnvqe0u01yn01w75nvk6dbl/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcllnvqe0u01yo01w7gpmy3nt6.mp3?v=1758572464933",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q3e04",
+      "id": "[object Object]",
+      "title": "（音檔修正）《城門城門幾丈高》第 9 集 田馥甄《一一》演唱會高雄場心得：重新理解灰色人生的彩色時刻",
+      "pub_date": "2023-08-16T22:22:10+08:00",
+      "duration": "01:44:55",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/WHdwNueupT93FNETbICnk.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clldqsldg01a201zj6fxi4m65/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclldqsldh01a301zj2y18hbok.mp3?v=1758570127793",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

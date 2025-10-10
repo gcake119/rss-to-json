@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 17,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T20:11:48+08:00",
+  "items": [
+    {
+      "slug": "2020Q2e34",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱警報！各位準媽媽卸貨前請注意：孕期憂鬱、推薦影集：《腦內解碼》、推薦Podcast：《大麻煩不煩》、《析心事務所的診間》",
+      "pub_date": "2020-05-06T06:01:07+08:00",
+      "duration": "41:32",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588605891410.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9ugiynymml70873z7zeg6ap/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588605891410.m4a?v=1616521383408",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e33",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 0502 政府補助勞工免費心理諮商服務",
+      "pub_date": "2020-05-02T10:56:35+08:00",
+      "duration": "17:25",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588388127442.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9p1bj4yvuyp08738s66fb36/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588388127442.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e32",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 「我們都有病」專訪：居然⋯⋯已經九年了嗎？、推薦書：《我們都有病：逃避，有什麼關係？致為病拚搏的年輕世代》",
+      "pub_date": "2020-05-01T18:01:12+08:00",
+      "duration": "17:26",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588161786331.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9o11quer23b0873ag02253u/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1587397310628.m4a?v=1609484171533",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e31",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 0425 節目開張滿三個月(04/19)、Dynasonic iM6麥克風抽獎結果出爐",
+      "pub_date": "2020-04-25T18:01:10+08:00",
+      "duration": "13:28",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343027698.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9fgel7xo2je08732wa2oz2s/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1587398634093.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e30",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.2 你有一則來自雞蛋糕的留言：節目首次抽獎「雞蛋糕手寫明信片」&回覆抽獎留言",
+      "pub_date": "2020-04-24T18:01:09+08:00",
+      "duration": "30:42",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588161656543.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9e0yplhhvju0873yzxno8q8/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1586951494733.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e29",
+      "id": "[object Object]",
+      "title": "Bonus 0423 鐵三角(Audio-Technica) AT2005麥克風測試 test~~test~~test~~",
+      "pub_date": "2020-04-23T13:29:14+08:00",
+      "duration": "00:18",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343185168.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9cbt6gqanxx08734arl7l14/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1587619751550.m4a?v=1593489757881",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e28",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 被小鬱亂入的生活-5：(省電更新)腦袋就像一團霧霧的果凍、推薦歌曲：阿爆(阿仍仍)《Sa'icelen 加油吧》",
+      "pub_date": "2020-04-17T18:01:18+08:00",
+      "duration": "15:42",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343199688.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck940vy7wce7n0873l702o51i/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1586951123285.m4a?v=1609483941274",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e27",
+      "id": "[object Object]",
+      "title": "[開槓好不好]  0416 全民防疫通識課：陳建仁副總統來開講 0420免費開課囉！",
+      "pub_date": "2020-04-16T21:00:55+08:00",
+      "duration": "06:56",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343230545.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck92rv31d71v70873dwpzd7rr/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1587042030059.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e26",
+      "id": "[object Object]",
+      "title": "[說書好不好] S1E4 書海衝浪 pt.4 非典型書蟲：用耳朵閱讀 - 機器語音朗讀電子書與有聲書",
+      "pub_date": "2020-04-11T18:31:11+08:00",
+      "duration": "10:49",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1609490596155.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8vhb95vc3gr0873g3em1uc5/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1585309489994.m4a?v=1609490602897",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e25",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 被小鬱亂入的生活-4：還能呼吸的時候，就得繼續呼吸、憂鬱症治療在台灣的四個重要不足",
+      "pub_date": "2020-04-10T18:01:18+08:00",
+      "duration": "33:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343293625.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8u0sz5n6jzy0873vh1u9ta5/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1585385554817.m4a?v=1609483778270",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

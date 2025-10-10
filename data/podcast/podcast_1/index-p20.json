@@ -1,0 +1,96 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 20,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T20:11:48+08:00",
+  "items": [
+    {
+      "slug": "2020Q1e04",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 藥還是不藥？、介紹書：《精神病大流行》、推薦電影：《茱蒂》",
+      "pub_date": "2020-02-14T00:25:18+08:00",
+      "duration": "29:20",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588344032121.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck6kyf8v5pi2j0873ch07rdpo/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1581611112640.wav?v=1609481341295",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e03",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 產後憂鬱症，不分男女生、推薦：懷哲的Podcast",
+      "pub_date": "2020-02-08T15:06:52+08:00",
+      "duration": "08:38",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588344052213.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck6d99ui9gan30873rc60970f/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1581145609283.wav?v=1609480932477",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e03",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱像扭蛋，還有特別版！、推薦書：《小鬱亂入，抱緊處理》、推薦小說&電影：《82年生的金智英》",
+      "pub_date": "2020-01-30T18:45:31+08:00",
+      "duration": "27:43",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588344086866.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck60m4d5p12i30873qaoj8nxn/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1580381124407.wav?v=1609480766398",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e02",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 發現小鬱亂入，怎麼辦？、繪本朗讀：黑狗系列",
+      "pub_date": "2020-01-30T18:02:14+08:00",
+      "duration": "30:16",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588344109664.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck60kkp2e11l70873zicbsuyq/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1580378525846.wav?v=1609481154310",
+        "type": "audio/wav"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e01",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 壓垮駱駝的最後一根稻草、推薦書：《我離開之後》",
+      "pub_date": "2020-01-26T18:00:00+08:00",
+      "duration": "13:49",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588344130782.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck60ij60h0z150873bsmbwvwh/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1581304566986.m4a?v=1609480356985",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020-01-19",
+      "id": "[object Object]",
+      "title": "喂喂 你還好不好 關於這個節目",
+      "pub_date": "2020-01-20T00:50:12+08:00",
+      "duration": "06:16",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588344149944.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck60ij60d0z130873m3r9wb2g/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1581304561020.m4a?v=1609480162177",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

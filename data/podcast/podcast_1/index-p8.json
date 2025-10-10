@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 8,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T20:11:48+08:00",
+  "items": [
+    {
+      "slug": "2022Q1e15",
+      "id": "[object Object]",
+      "title": "《百態自由》日曆：2022年一月七日 星期五，給無法全然接納自己、習慣自我批判的我們",
+      "pub_date": "2022-01-07T22:53:38+08:00",
+      "duration": "05:50",
+      "image": "https://file.cdn.firstory.me/Avatar/ck60hb2c90wp50873k099tilh/1636869968005.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cky4iqjy91gxx09423ml67xxu/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1641567213575.mp3?v=1732359880756",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q1e14",
+      "id": "[object Object]",
+      "title": "《百態自由》日曆：2022年一月一日 星期六，給感覺卡在泥淖中好久好久的我們",
+      "pub_date": "2022-01-01T16:03:16+08:00",
+      "duration": "01:17",
+      "image": "https://file.cdn.firstory.me/Avatar/ck60hb2c90wp50873k099tilh/1636869968005.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckxvjfpsmamb809538qhhkcz6/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1641024193843.mp3?v=1733993568111",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q4e13",
+      "id": "[object Object]",
+      "title": "[說書好不好] 《以太奇襲》：一個 19 歲少年的夢想世界，打造下一個世代的網路與金融新生態、節目專屬 NFT 免費發放預告",
+      "pub_date": "2021-12-29T07:00:52+08:00",
+      "duration": "39:29",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1640619790809.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckxouo10302ja0a14rhun1wr6/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1640619790809.mp3?v=1692868110788",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q4e12",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 電池壞掉人踏上「多平台創作人」之路，歡迎抖內與訂閱支持",
+      "pub_date": "2021-12-21T07:00:57+08:00",
+      "duration": "27:34",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1639513884278.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckx6k8p2dfkuq0893mw1u2d4v/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1639513884278.mp3?v=1692868058983",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q4e11",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活- 22：胖鬱不囉嗦，一擊把我 K.O.、推薦歌曲：好樂團《蒸發》、推薦小說：《無差別愛人》",
+      "pub_date": "2021-12-15T03:21:20+08:00",
+      "duration": "35:28",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1639509671233.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckx6hqdg002rd09766np2odft/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1639509671233.mp3?v=1692872581660",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q4e10",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-21：小菜雞開始練肌、要知道換季總是讓人愛睏，你又何苦強打精神？",
+      "pub_date": "2021-11-08T07:00:46+08:00",
+      "duration": "37:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1636088664545.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckvlwybki2g4h0910cufara19/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1636088664545.mp3?v=1692872580411",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q4e09",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 野生雞蛋糕講座出沒注意、《小鬱亂入》團隊新作嘖嘖募資、小鬱亂入的生活-20：論曬太陽之必要、胖胖瘦瘦",
+      "pub_date": "2021-10-13T07:00:11+08:00",
+      "duration": "27:07",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1634050682981.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckuo7l9re3pk70926bq6o0y9q/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1634050682981.mp3?v=1692872592478",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q4e08",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 吃瓜聊劇-1：楊謹華《敗犬女王》 ft. 小花 傑西大叔",
+      "pub_date": "2021-10-05T07:00:53+08:00",
+      "duration": "56:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1633282679539.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckubicczqy78e0976hyf1nz5p/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1633282679539.mp3?v=1692872626312",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q3e07",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-19 ：當被胖鬱踩扁成爛泥，我成為一坨會呼吸的肉、推薦書：《神奇的慢呼吸》、私房特調汽水",
+      "pub_date": "2021-09-28T21:38:43+08:00",
+      "duration": "30:29",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1632836557421.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cku44l6cbqz0u0809fzhlwq76/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1632836316445.mp3?v=1692872609508",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2021Q3e06",
+      "id": "[object Object]",
+      "title": "[說書好不好] 新書福利社－《人生雖苦，但還是值得活下去》、《你的善良，不要浪費在不值得的人身上》皇冠文化合作贈書",
+      "pub_date": "2021-09-03T23:34:31+08:00",
+      "duration": "14:54",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1630683265769.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckt4ipsjt852z0851iee2qutt/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1630683265769.mp3?v=1692872618117",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

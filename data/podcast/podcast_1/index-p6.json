@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 6,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T20:11:48+08:00",
+  "items": [
+    {
+      "slug": "2023Q1e07",
+      "id": "[object Object]",
+      "title": "[草木燉雞] 聲音Vlog～開箱訴心理諮商所 ft. 草木談心",
+      "pub_date": "2023-02-14T19:38:41+08:00",
+      "duration": "54:20",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/sUgfcHjrKEfRjX7TyzBTE.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cle464qt904qe01tjau14gzvw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcle464qt904qf01tj6ewgfau6.mp3?v=1758408306350",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e06",
+      "id": "[object Object]",
+      "title": "《城門城門幾丈高》第 16 集 2023 首次直播——從物理治療中學到的事，和失聲時與心理師溝通的方法",
+      "pub_date": "2023-02-11T21:24:46+08:00",
+      "duration": "59:31",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/714ZhuYma8VHu4L3ypmRi.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cldzznzxi0o4o01t49nlueole/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcldzznzxi0o4p01t45g2x6ife.mp3?v=1758397280755",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e05",
+      "id": "[object Object]",
+      "title": "[草木燉雞] 開箱草老闆！台南不只有關廟麵，還有這會心理諮商所！ 2021/02/28 ft. 《草木談心》《兩個女生的聊天紀錄》",
+      "pub_date": "2023-01-31T08:10:11+08:00",
+      "duration": "01:10:00",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/uGlFG8Vju0-8YyO32CMfF.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cldjhcz5f0mfe01tj2zbx5uye/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcldjhcz5f0mff01tjdxrhdo0c.mp3?v=1758397631746",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e04",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 我想結束的不是生命，是痛苦 ft. 《心理師乾杯》der 寶",
+      "pub_date": "2023-01-29T19:09:36+08:00",
+      "duration": "01:09:58",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/ioDFoBFv_FdjgSd6CALEU.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cldha1kqu0lhv01tj2jf36om3/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcldha1kqu0lhw01tj8fg8eh62.mp3?v=1758414248966",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e03",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-24：迎來另一個冬天的尾聲，我已經多活了三年",
+      "pub_date": "2023-01-20T14:39:22+08:00",
+      "duration": "26:22",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/cAMLovNExywGhBZLKkRlh.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cld45ic5w03hq01v7cenu2ewt/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcld45ic5x03hr01v7bpta23dc.mp3?v=1758396871039",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e02",
+      "id": "[object Object]",
+      "title": "「喂喂，你，還好不好？」我是雞蛋糕",
+      "pub_date": "2023-01-20T14:29:21+08:00",
+      "duration": "02:46",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cld455zrq03hk01v7fw7n65sg/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcld455zrq03hl01v7h6mm3e7e.mp3?v=1758408167213",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e01",
+      "id": "[object Object]",
+      "title": "《城門城門幾丈高》第 2 集 請記得求救是一件勇敢的事，我跟你說這件事是因為你對我很重要。頭頸部日常放鬆小技巧分享。",
+      "pub_date": "2023-01-19T00:17:09+08:00",
+      "duration": "01:40:06",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/epssugzb8OJAe6LjEjB1W.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cld1v58wn00vx01v75tet1d9i/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcld1v58wn00vy01v705qy29nk.mp3?v=1758416898981",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e09",
+      "id": "[object Object]",
+      "title": "《城門城門幾丈高》第 1 集 什麼是憂鬱症？我和我的小鬱，還有身邊的守門員",
+      "pub_date": "2023-01-14T01:15:21+08:00",
+      "duration": "01:33:18",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/yVOpqR9lVRjfINSUntn4m.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clcus2osl04pj01uabz3vgbb9/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclcus2osl04pk01uadmgfb2sw.mp3?v=1758408499288",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2023Q1e08",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-23：只想、也只能一個人待著",
+      "pub_date": "2023-01-11T18:29:47+08:00",
+      "duration": "38:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/5Q_3PJun-jw-ILiSab_QB.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clcriqlym02ol01yhbkd70v6w/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclcriqlym02om01yh28gk9doa.mp3?v=1758414180676",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q4e07",
+      "id": "[object Object]",
+      "title": "《城門城門幾丈高》第 14 集 沒錢很焦慮，還是要解決！從誤打誤撞進幣圈，到走在自學成為軟體工程師修煉之路",
+      "pub_date": "2022-12-30T00:09:38+08:00",
+      "duration": "01:09:24",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/DVSTVptDmBjDWiuDQUsxZ.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clc9a642g017l010fbv1xa4rn/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclc9a642g017m010f5i0128ds.mp3?v=1734018368537",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}
