@@ -13,6 +13,6 @@
     "node-fetch": "^3.3.2",
     "sanitize-html": "^2.13.0",
     "date-fns": "^3.6.0",
-    "feedparser": "^3.0.0"
+    "feedparser": "^2.2.10"
   }
 }
