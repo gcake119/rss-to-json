@@ -1,0 +1,138 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 5,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T05:33:47Z",
+  "items": [
+    {
+      "id": "[object Object]",
+      "title": "[草木燉雞] 續集，結束一段諮商關係之後～ ft.《草木談心》",
+      "pub_date": "2023-04-25T04:01:18Z",
+      "duration": "55:06",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/Jk77z28UhDNcWZKW7Ut4Q.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clgi2u6f200di01x4c5400pg6/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclgi2u6f200dj01x48w87hze0.mp3?v=1758598929685",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 安眠藥使用並不會導致憂鬱症、去污名化的同時是否也在給自己貼標籤呢？推薦紀錄片：BBC News 中文《在韓國成為明星的朝鮮「脫北者」》",
+      "pub_date": "2023-04-19T11:23:11Z",
+      "duration": "34:52",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/bBWUsU0anD55fCb71qgnS.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clgi3bj2o03ha01x7gj5v5hfr/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclgi3bj2o03hb01x7byun8xcd.mp3?v=1758598413560",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 《喂喂好朋友抱報》發刊！憂鬱症的藥物治療原理、推薦書：《終結憂鬱症 Inflamed Mind》",
+      "pub_date": "2023-04-12T02:30:15Z",
+      "duration": "41:41",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/AcYt4PFAd4XDqnNA_ebU8.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clgchg8h700y001x494tm6tud/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclgchg8h700y101x40t30giyo.mp3?v=1758598968361",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 個案掃雷：哲學、諮商、團體、工作坊，原來是名詞串接啊！",
+      "pub_date": "2023-04-07T09:23:21Z",
+      "duration": "15:03",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/lBEG5TXoV802LZVqfP6C6.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clg6ca5z4007i01w6ejilh3lf/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclg6ca5z4007j01w6bmxz7439.mp3?v=1758598102846",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "《城門城門幾丈高》第 3 集 兜兜轉轉憂鬱症治療路：精神科、神經內科、睡眠科、心理師、物理治療師",
+      "pub_date": "2023-04-04T04:01:12Z",
+      "duration": "01:15:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/HhIq5TqoFW8jHm78veH1r.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clg0mzmi804ei01v31tr0gpru/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclg0mzmi804ej01v3do449qn3.mp3?v=1758397631537",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-26：「你有什麼心理問題？」，在碎成一地之前建立自己的情緒防火牆",
+      "pub_date": "2023-03-28T17:43:06Z",
+      "duration": "33:34",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/qh1El8O2Q21BMcrOQf19G.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clfsjq2g0018c01uq9jw2d7s2/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclfsjq2g0018d01uq07cp2dqv.mp3?v=1758598576401",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[說書好不好] 每次呼吸之間 - 1：《告訴我，你是怎麼死的》、推薦日劇：《監察医 朝顔》",
+      "pub_date": "2023-03-24T18:21:24Z",
+      "duration": "27:44",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/36FNKw55eD9N2egLG5xMf.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clfmva3br01zp01x08eq0b6a3/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclfmva3br01zq01x04dyta2a1.mp3?v=1758598769675",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[草木燉雞] KKBOX 風雲榜百大歌手，讓你想起什麼音樂故事？ ft. 草木談心",
+      "pub_date": "2023-03-21T09:01:01Z",
+      "duration": "32:40",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/xs0QrQGaAz0p1a88hrSJ9.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clfh1dow200fr01100q4y6tuo/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclfh1dow300fs0110hunlbyuq.mp3?v=1758397264192",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[草木燉雞] 結束一段諮商關係 ft. 草木談心",
+      "pub_date": "2023-03-07T10:18:05Z",
+      "duration": "55:55",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/gFzi4jc2dJIuQVpOPRS3H.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cley3kfvc00rm01vwcfxt5l4n/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcley3kfvc00rn01vw39pdav9u.mp3?v=1758598698232",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-25：是我的大腦出事。開箱治療師！問題募集中。推薦書：《腦內風暴》",
+      "pub_date": "2023-02-28T13:55:34Z",
+      "duration": "31:01",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/LQRTWdsZ7VMPy1L8-zUZg.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cleob9hmr046a01v58roz61mz/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcleob9hmr046b01v5dv1k4jhg.mp3?v=1758397033544",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

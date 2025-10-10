@@ -1,0 +1,138 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 1,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T05:33:47Z",
+  "items": [
+    {
+      "id": "[object Object]",
+      "title": "建立陪伴者小隊，維持人際連結",
+      "pub_date": "2025-08-08T23:02:48Z",
+      "duration": "23:15",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cme2xagxk00ah01qyeg5camce/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcme2xagxl00ai01qy3a8u69ar.mp3?v=1759806798887",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "六年多才發現是躁鬱症？請以「延遲診斷」取代「誤診」",
+      "pub_date": "2025-07-25T23:01:53Z",
+      "duration": "27:29",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cmdizoblf007h01wb3pxp3ni4/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcmdizoblf007i01wb9uzq498b.mp3?v=1760026304493",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "好久不見，節目簡介文字改了",
+      "pub_date": "2025-07-18T23:01:55Z",
+      "duration": "26:25",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cmd4npvka094l01v62u3idnim/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcmd4npvka094m01v61q6igcz4.mp3?v=1759806757160",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 憂鬱症的常見比喻",
+      "pub_date": "2024-10-18T12:38:44Z",
+      "duration": "36:40",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cm2epu2sp001h01sq9vvm4xo2/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcm2epu2sp001i01sq0sus5nkh.mp3?v=1751989330674",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 最好的一年。小新生日快樂，阿嘟嘟謝謝你！",
+      "pub_date": "2024-09-30T11:46:33Z",
+      "duration": "16:38",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/fnjjQJS7ATr-UBbm1dgwb.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cm1oy1y9c01ub01xqej110agj/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcm1oy1y9c01uc01xq1su86w7v.mp3?v=1752044538275",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 雞蛋糕開刀去-2：選擇全自費術式的理由，面對手術風險的思考",
+      "pub_date": "2024-06-21T04:16:40Z",
+      "duration": "21:50",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/L2uiKlAyZld8taBb3nlod.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clxo6i0tl03po01uxbzdz7qty/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclxo6i0tl03pp01ux8rvl6hib.mp3?v=1756655542471",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[草木燉雞] 單元同名主題曲",
+      "pub_date": "2024-06-07T13:08:12Z",
+      "duration": "04:19",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/Ql1dqszhpN9fju-03T-Pc.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clx4pc6vq000w01xla7nybf5x/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclx4pc6vq000x01xlfixpfe7n.mp3?v=1756655877638",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[燒酒雞乾杯] 單元同名主題曲",
+      "pub_date": "2024-06-07T13:01:27Z",
+      "duration": "03:09",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/vZe01nwC7rr33qyXDcp8x.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clx4p3je902u801xmcqd64idd/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclx4p3je902u901xm8feqe2pn.mp3?v=1758572126718",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[魚蛋話燒] 單元同名主題曲",
+      "pub_date": "2024-06-06T04:55:45Z",
+      "duration": "04:30",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/OsUaMLr-m41WEvVglcAmI.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clx2sb0ve0a0701x7ckfc6f0t/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclx2sb0ve0a0801x75q1i7uop.mp3?v=1752044256995",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "《喂喂你還好不好》節目同名主題曲",
+      "pub_date": "2024-06-04T12:14:36Z",
+      "duration": "03:56",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/zNjDdoA-9dkF9lQTYhGpo.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clx0d3pf90ak001xlbmcjh9x0/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclx0d3pf90ak101xlbpuv5y2k.mp3?v=1759247180769",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

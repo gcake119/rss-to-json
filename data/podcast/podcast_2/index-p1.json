@@ -1,0 +1,138 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "雞蛋糕孵蛋中 GCAKE Delivery－讓所有故事。破。蛋。而。出。",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://d3mww1g1pfq2pt.cloudfront.net/Avatar/ckfqmqknj6k7e0800m9lk8at1/1601642598286.png",
+    "link": "https://gcake-delivery.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 1,
+  "page_size": 10,
+  "total_items": 16,
+  "total_pages": 2,
+  "updated_at": "2025-10-10T05:33:48Z",
+  "items": [
+    {
+      "id": "[object Object]",
+      "title": "《如何做出爆紅Podcast？》Clubhouse 線上讀書會 Live Podcast ft. 傑西大叔 與 小聯盟好朋友們",
+      "pub_date": "2021-10-14T04:40:41Z",
+      "duration": "01:18:30",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Avatar/ckfqmqknj6k7e0800m9lk8at1/1601642598286.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckuqgevuq0b4b096459edo23t/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1634186427863.mp3?v=1634186440849",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "雞蛋糕幕後說：Live Podcast 按下錄音鍵之後，一切都是細節 ft. 這裡胡說 傑西大叔 X 彼岸薄荷 狐叔",
+      "pub_date": "2021-03-30T09:07:13Z",
+      "duration": "35:32",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1617095163013.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckmvoftul5e1w0802ad8te6y4/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1617087994054.m4a?v=1617095171052",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[Podcasters與他們的產物] 為什麼工作坊名字那麼長？ ft. Ubi、阿海",
+      "pub_date": "2021-03-15T01:34:32Z",
+      "duration": "02:00",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1615772066115.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckm9wz1ye1fp70949mwzgkmfd/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1615772066115.m4a?v=1615772072052",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[Podcasters與他們的產物] 你的聲音很有故事，只是你不知道 ft. Ubi 阿海",
+      "pub_date": "2021-03-11T06:36:18Z",
+      "duration": "20:07",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1615771897135.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckm4hzpmv78510807n9iqyqoa/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1615444572244.m4a?v=1615444576768",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "雞蛋糕幕後說：Live Podcast 在你按下錄音鍵之前 ft. 這裡胡說 傑西大叔 X 彼岸薄荷 狐叔",
+      "pub_date": "2021-02-22T16:08:25Z",
+      "duration": "24:33",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1614010097534.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/cklgrxyo2gfga0854qtr9fa6c/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1614010097534.m4a?v=1617094395083",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "Live Podcast Case 004 書店開放式空間講座收音：2020/11/07 謝依婷醫師《我們的孩子在呼救》新書分享會",
+      "pub_date": "2021-02-22T13:57:54Z",
+      "duration": "01:23:45",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1614002262435.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/cklgna5dcn27t0878h66vxp6b/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1614002262435.mp3?v=1614002274443",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "Live Podcast 可以是種充滿有機魅力的創作型態 ft. 伯錚 aka 剛好是展演企劃的超熱情podcast聽眾",
+      "pub_date": "2020-12-25T10:15:04Z",
+      "duration": "30:45",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1608891297285.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckj44cbcjb14c0819ad1di9cc/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1608891297285.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "Live Podcast Case 003 大樓內多功能電腦教室收音：2020/10/18《小柔的最後一天》體驗式桌遊－Podcaster里民服務處專場",
+      "pub_date": "2020-11-08T12:24:08Z",
+      "duration": "26:45",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1604838241577.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckh9399bu8k420892j0j9hfps/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1604838241577.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "Live Podcast Case 002 青年旅館地下室房間收音：2020/10/17 Podcast 里民大會會後感想IG快閃直播精華、百靈果台南佈道大會活動預告",
+      "pub_date": "2020-11-08T12:19:30Z",
+      "duration": "29:44",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1604837963741.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckh933ass8jeh0892sj1p20qq/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1604837963741.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "Live Podcast Case 001 開放會議室演講收音：2020/08/09 高雄「開Pod」分享會",
+      "pub_date": "2020-11-08T12:14:35Z",
+      "duration": "45:38",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1604837668621.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckh92wz3866te0841x894kwgw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1604837668621.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

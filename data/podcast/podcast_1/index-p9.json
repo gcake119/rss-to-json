@@ -1,0 +1,138 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 9,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T05:33:47Z",
+  "items": [
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 每一天都是最後一天 ft.《心靈角落》老白 諮商心理師",
+      "pub_date": "2021-08-19T23:00:49Z",
+      "duration": "57:39",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1630850207589.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cksgecdyyvqhc0938aksg2jph/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1629224728856.mp3?v=1692872679961",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "「小柔的最後一天-惡意時代」 新版桌遊嘖嘖募資開跑",
+      "pub_date": "2021-08-18T08:29:37Z",
+      "duration": "03:02",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1629275374255.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cksh8hqgb2mbu0938f44lyres/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1629275374255.mp3?v=1692872629391",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "《我每天吃十四顆藥，依舊相信會得到幸福》時報出版贈書 抽獎結果",
+      "pub_date": "2021-08-09T15:21:25Z",
+      "duration": "05:43",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1628527607749.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cks4s8nrugjk00986neh2pzi8/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1628522482345.mp3?v=1692872650147",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 當網路霸凌傷害已經造成，我們要從建立自身的心理韌性開始練習！ ft. 《媒體試毒》派派",
+      "pub_date": "2021-07-30T23:00:52Z",
+      "duration": "39:40",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1627573770939.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckrosc4zg9kir0987m7z9enc3/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1627555181416.mp3?v=1692872714137",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[說書好不好] 《我每天吃十四顆藥，依舊相信會得到幸福》時報出版贈書",
+      "pub_date": "2021-07-29T23:00:19Z",
+      "duration": "19:32",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1627433109471.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckrm45m6unftm0806zd24ecoy/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1627393636915.mp3?v=1692872696489",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] IG留言送隱藏版明信片：聽起來有感覺雞蛋糕嘴角上揚就給過",
+      "pub_date": "2021-07-19T09:39:30Z",
+      "duration": "19:15",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1626687563114.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckrafs1tk3yh308155pstw8s7/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1626687563114.mp3?v=1692872708306",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 鬱症加重：報平安、按月訂閱開通：諮商小豬撲滿計劃、小小聲明",
+      "pub_date": "2021-07-16T19:53:02Z",
+      "duration": "09:11",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1626465178022.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckr6rdi7sl6lz0801cjrlu30v/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1626465178022.mp3?v=1692872712912",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "「很久很久以前，我是個網球迷，不小心成為一個網球教練……聊聊大坂直美的法網退賽事件」 20210608 直播存檔",
+      "pub_date": "2021-07-07T11:00:04Z",
+      "duration": "01:42:00",
+      "image": "https://file.cdn.firstory.me/Avatar/ck60hb2c90wp50873k099tilh/1636869968005.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckqtd4s5l08xe0818ygnktuqc/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1625655182225.mp3?v=1692872843962",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "國際「停止網路霸凌日」Stop Cyberbullying Day 公益宣傳口播 ft. 董氏基金會",
+      "pub_date": "2021-06-26T08:40:27Z",
+      "duration": "16:56",
+      "image": "https://file.cdn.firstory.me/Avatar/ck60hb2c90wp50873k099tilh/1636869968005.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckqdijja34vyq0b39yyhohghw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1624696823138.mp3?v=1692872751435",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[動作好不好] 動作科學專家雞蛋糕，聊聊生活中的好動作和好姿勢，一起輕鬆長知識！",
+      "pub_date": "2021-06-05T14:55:29Z",
+      "duration": "16:35",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1622904923844.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckpjvox6qzzfm08121ohetl8c/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1622904923844.mp3?v=1692872761743",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

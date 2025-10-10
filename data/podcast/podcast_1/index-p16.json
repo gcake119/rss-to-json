@@ -1,0 +1,138 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 16,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-10T05:33:47Z",
+  "items": [
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.5 感恩特輯：請收下我的膝蓋!!! 致現實中小心翼翼捧著玻璃心雞蛋糕的好朋友們",
+      "pub_date": "2020-06-13T16:01:10Z",
+      "duration": "20:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1592384925430.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckbdtuajlf9m80873ji3tl8xa/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1591891405042.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 知識就是支持小鬱患者最大的力量：雞蛋糕充電書單 (Readmoo讀墨贊助電子書)",
+      "pub_date": "2020-06-12T14:54:32Z",
+      "duration": "40:18",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1591973616715.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckbcc0r8l3rv50873lttbtpf1/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1591973616715.m4a?v=1609485392487",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[說書好不好] 雞蛋糕愛看書-1：沉默契約 (感謝平安文化提供贈書，抽獎6/15截止)",
+      "pub_date": "2020-06-06T10:01:18Z",
+      "duration": "13:55",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1609491750740.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckb3gwj235k6r0873egu740dv/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1591352298578.m4a?v=1609491758388",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-6：不管有電還是沒電，每天都給自己一個甜甜的早安吧！",
+      "pub_date": "2020-06-05T10:01:12Z",
+      "duration": "10:33",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588342851848.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckb21gjxxvlqn0873v39xnol6/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1591241174474.m4a?v=1616520517210",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.4 你有一則來自雞蛋糕的留言：謝謝因為「去他x的世界正向」受訪而認識雞蛋糕的你們",
+      "pub_date": "2020-05-29T10:01:09Z",
+      "duration": "18:10",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1587616851047.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckas1dj25zvu30873cwxrsqf0/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588734269100.m4a?v=1590924333961",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] Follow發路共享空間 - 發路電子報第30番：草莓三明治",
+      "pub_date": "2020-05-22T10:01:14Z",
+      "duration": "17:31",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588522237424.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckai1antk8b5t0873a3u3me9t/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588522237424.m4a?v=1609484609775",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[說書好不好] S1E6 書海衝浪 pt.6 回覆留言、有聲書學會、雞蛋糕私房書單、推薦Podcast：《書時料理》、《抹黑客》、《Yo! What's Up在幹嘛》",
+      "pub_date": "2020-05-16T10:01:11Z",
+      "duration": "58:21",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1609491426350.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cka9gnhynrsyr08731vmprs37/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1589098525139.m4a?v=1609491441348",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.3 你有一則來自雞蛋糕的留言：來自小鬱陪伴者與病友們的訊息",
+      "pub_date": "2020-05-15T10:01:11Z",
+      "duration": "23:10",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588729664272.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cka817n7nkda9087303m75dy3/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588729664272.m4a?v=1590924459462",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[說書好不好] S1E5 書海衝浪 pt.5 Readmoo讀墨電子書平台&電子書閱讀器Mooink+、推薦Podcast：《星箭廣播》、《破水桶 The Bucket》",
+      "pub_date": "2020-05-09T10:01:14Z",
+      "duration": "45:23",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1609490937265.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9zgklucbj4f0873k2zcx7hj/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588407956862.m4a?v=1609490952265",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "id": "[object Object]",
+      "title": "[說書好不好] 雞蛋糕愛看冊-預告 (全台語小單元)",
+      "pub_date": "2020-05-08T10:01:10Z",
+      "duration": "06:54",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588929189441.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck9y14nwx4jct0873d4x0waz6/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1588929189441.m4a?v=1593489780313",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}
