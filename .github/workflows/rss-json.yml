@@ -111,3 +111,4 @@ jobs:
             git push
           else
             echo "No JSON changes to commit."
+          fi
