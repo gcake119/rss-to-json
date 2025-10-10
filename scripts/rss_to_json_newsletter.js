@@ -26,17 +26,26 @@ const xml = await (await fetch(FEED_URL)).text();
 const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: '',
-  cdataPropName: 'cdata'
+  cdataPropName: 'cdata',
+  ignoreNameSpace: true   // 關鍵：忽略命名空間前綴，讓 content:encoded / dc:creator 變成普通 key
 });
 const rss = parser.parse(xml);
-const channel = rss?.rss?.channel || {};
-const items = Array.isArray(channel.item) ? channel.item : (channel.item ? [channel.item] : []);
+
+// 兼容多層結構，確保能拿到 channel 與 item
+const channel = rss?.rss?.channel || rss?.channel || {};
+let items = [];
+if (Array.isArray(channel.item)) items = channel.item;
+else if (channel.item) items = [channel.item];
+else items = [];
+
+// Debug（必要時打開）
+// console.log('items.length =', items.length);
+// if (items.length === 0) {
+//   console.log('Parsed channel =', JSON.stringify(channel, null, 2).slice(0, 4000));
+// }
 
 // Channel-level fallbacks
-const channelImage =
-  channel.image?.url ||
-  null;
-
+const channelImage = channel?.image?.url || null;
 const show = {
   title: textOf(channel.title),
   author: textOf(channel['itunes:author']) || textOf(channel['googleplay:author']) || textOf(channel['dc:creator']) || textOf(channel.copyright),
@@ -50,14 +59,15 @@ const show = {
 const summaries = [];
 
 for (const it of items) {
-  const guid = textOf(it.guid?.cdata || it.guid?._ || it.guid) || genGUID(it);
-  const title = textOf(it.title);
-  const link = textOf(it.link);
-  const pubISO = toISO(textOf(it.pubDate)) || formatISO(new Date());
-  const author = textOf(it['dc:creator']) || show.author;
+  // 以 namespace 已忽略為前提，以下 key 都是簡名（無冒號）
+  const guid = textOf(it?.guid?.cdata || it?.guid?._ || it?.guid) || genGUID(it);
+  const title = textOf(it?.title);
+  const link = textOf(it?.link);
+  const pubISO = toISO(textOf(it?.pubDate)) || formatISO(new Date());
+  const author = textOf(it?.['dc:creator']) || textOf(it?.creator) || show.author;
 
   // Prefer content:encoded > description
-  const contentHTML = htmlOf(it['content:encoded']) || htmlOf(it.description) || '';
+  const contentHTML = htmlOf(it?.['content:encoded']) || htmlOf(it?.description) || '';
   const contentText = toText(contentHTML);
 
   // Cover image: prefer first <img> in content; fallback channel image
@@ -128,14 +138,15 @@ const pageSize = 10;
 const total = summaries.length;
 const totalPages = Math.max(1, Math.ceil(total / pageSize));
 
-for (let p = 1; p <= totalPages; p++) {
+// 若無項目，仍產生 index-p1.json，方便前端處理
+for (let p = 1; p <= Math.max(1, totalPages); p++) {
   const slice = summaries.slice((p - 1) * pageSize, p * pageSize);
   const index = {
     type: 'newsletter',
     page: p,
     page_size: pageSize,
     total_items: total,
-    total_pages: totalPages,
+    total_pages: Math.max(1, totalPages),
     updated_at: formatISO(new Date()),
     items: slice
   };
@@ -149,7 +160,7 @@ console.log('Substack RSS → JSON done');
 
 // --------------- Helpers ---------------
 function getArg(k) { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; }
-function textOf(v) { if (!v) return null; if (typeof v === 'string') return v; if (v.cdata) return v.cdata; if (v._) return v._; return String(v); }
+function textOf(v) { if (v === null || v === undefined) return null; if (typeof v === 'string') return v; if (v?.cdata) return v.cdata; if (v?._) return v._; return String(v); }
 function htmlOf(v) { return textOf(v) || ''; }
 function toISO(rfc822) { if (!rfc822) return null; const d = new Date(rfc822); if (isNaN(d)) return null; return formatISO(d); }
 function toText(html) {
@@ -191,26 +202,29 @@ function extractFirstImage(html) {
 }
 function extractTags(ch, it) {
   const toArr = v => (Array.isArray(v) ? v : v ? [v] : []);
-  const a = toArr(ch.category).map(textOf);
-  const b = toArr(it.category).map(textOf);
+  const a = toArr(ch?.category).map(textOf);
+  const b = toArr(it?.category).map(textOf);
   return [...new Set([...a, ...b].filter(Boolean))];
 }
 function detectVoiceover(item, html) {
-  if (item.enclosure && /^audio\//i.test(item.enclosure.type || '')) {
+  // enclosure audio
+  const enc = item?.enclosure;
+  if (enc && /^audio\//i.test(enc.type || '')) {
     return {
-      url: item.enclosure.url || null,
-      type: item.enclosure.type || null,
-      bytes: item.enclosure.length ? parseInt(item.enclosure.length, 10) || null : null,
+      url: enc.url || null,
+      type: enc.type || null,
+      bytes: enc.length ? parseInt(enc.length, 10) || null : null,
       source: 'enclosure'
     };
-  }
-  const m = html.match(/https?:\/\/[^\s"'<>]+\.mp3\b/);
+    }
+  // content 中的 mp3
+  const m = (html || '').match(/https?:\/\/[^\s"'<>]+\.mp3\b/);
   if (m) {
     return { url: m[0], type: 'audio/mpeg', bytes: null, source: 'content' };
   }
   return null;
 }
 function genGUID(it) {
-  const base = `${textOf(it.title) || ''}-${textOf(it.pubDate) || ''}-${textOf(it.link) || ''}`;
+  const base = `${textOf(it?.title) || ''}-${textOf(it?.pubDate) || ''}-${textOf(it?.link) || ''}`;
   return crypto.createHash('md5').update(base).digest('hex');
 }
