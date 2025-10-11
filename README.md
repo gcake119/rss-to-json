@@ -1,6 +1,6 @@
 # 🎯 GCAKE.Space 雞蛋糕個人創作者網站專案進度總結
 
-**更新時間：** 2025年10月11日 12:22 PM  
+**更新時間：** 2025年10月11日 17:12 PM  
 **GitHub 倉庫：** [gcake119/rss-to-json](https://github.com/gcake119/rss-to-json)  
 **測試網站：** [gcake119.github.io/rss-to-json](https://gcake119.github.io/rss-to-json/)
 
@@ -8,114 +8,75 @@
 
 ## 📋 專案概述
 
-利用 **ENS**、**IPFS**、**RSS feeds**、**Storj** 等去中心化技術建立的內容創作者個人網站，實現：
-- Podcast 與 Newsletter 內容自動同步
-- 跨平台備援與分發不中斷  
-- 靜態網站免伺服器維護
-- Web3 技術棧的實際應用
+- 利用 **ENS**、**IPFS**、**RSS feeds**、**Storj** 等去中心化技術，建立網路創作者個人網站
+- 支援 Podcast、Newsletter 內容自動同步更新
+- 無伺服器、純靜態架構，Web3 技術棧實踐
+- 多平台備援內容分發不中斷
 
 ---
 
 ## 🏗️ 網站架構
 
 ### 前端技術
-- 純原生 JavaScript SPA：hash 路由多頁面導航
-- 響應式設計：Gruvbox 暗色系主題，卡片式 UI
-- 多內容類型：Podcast/Newsletter 完整分頁與單篇渲染
+- 原生 JavaScript SPA + hash 路由多頁功能
+- Gruvbox 暗色主題、卡片式分頁 UI
+- Podcast/Newsletter 等多內容型態動態渲染
 
 ### 資料處理流程
-- RSS → JSON 轉換：完全靜態化後端，fetch 方式載入
-- Firstory 播放器整合：Podcast 嵌入式播放器
-- 多平台內容支援：Newsletter 主圖、語音欄位、文字優化
+- RSS → JSON 靜態化腳本
+- Firstory 播放器 iframe嵌入
+- Newsletter 圖像清理、語音欄位支援
+- 多來源 RRS 聚合、fallback 合併
 
 ### 部署策略
-- GitHub Pages：CI/CD 開發主站（靜態測試）
-- 未來規劃：IPFS + Storj 作為分發與主存儲，GitHub Pages 作備援
+- GitHub Pages 為前端主站，CI/CD自動化維護分頁/資料
+- 後續規劃為 IPFS + Storj 分層主備援
 
 ---
 
 ## 📊 資料結構設計
 
-### Podcast 資料格式
-{
-"type": "podcast",
-"show": {
-"title": "喂喂你還好不好",
-"author": "雞蛋糕 GCAKE"
-},
-"items": [
-{
-"slug": "2025Q3e03",
-"title": "建立陪伴者小隊，維持人際連結",
-"duration": "23:15",
-"audio": {"url": "...", "type": "audio/mpeg"}
-}
-]
-}
-
-### Newsletter 資料格式
-{
-"type": "newsletter",
-"items": [
-{
-"slug": "companion-squad",
-"title": "我與我的「陪伴者小隊」：報平安的日常",
-"cover": "https://...",
-"has_voiceover": false
-}
-]
-}
-
-
-### 目錄結構
-- `/data/podcast/{podcast_N}/` - Podcast 資料
-- `/data/newsletter/{newsletter_N}/` - Newsletter 資料
-- `/data/voiceover/{newsletter_N}/` - 語音檔案（規劃中）
+- `/data/podcast/{podcast_N}/`
+- `/data/newsletter/{newsletter_N}/`
+- `/data/voiceover/{newsletter_N}/`
+- `/img/` `/fonts/` `/static/`：資源目錄
 
 ---
 
-## ✅ 已完成功能
+## ✅ 已完成測試項目
 
-### 核心功能實現
-- SPA 路由系統：多頁面 hash 路由正常運作
-- 內容管理：Podcast 與 Newsletter 卡片分頁、詳細內文渲染
-- 播放器整合：Firstory 播放器 iframe 嵌入與封面自動切換
-- 內容優化：Newsletter 圖像限寬、去重、雜訊內容清理
-
-### 自動化流程
-- RSS 轉換腳本：slug/cover/image 欄位自動對齊前端需求
-- GitHub Actions CI：持續部署與資料更新流程穩定
-- Fallback 機制：多 RSS 來源自動合併，異常時不覆蓋既有內容
-
-### 測試驗證項目
-- ✔️ GitHub Pages 靜態網站部署，分頁 API 正常
-- ✔️ 多來源內容呈現（Firstory, Substack, Paragraph）
-- ✔️ Podcast/Newsletter 同步拉取、資料結構統一
-- ✔️ SPA 響應式排版、主題功能運作無誤
+- SPA 路由／分頁切換正常渲染
+- Podcast/Newsletter JSON 結構、前端區塊渲染一致
+- Firstory 播放器自動嵌入，主圖lazy loading
+- RSS → JSON slug、cover、meta 欄位自動提取同步
+- GitHub Actions CI 持續部署成功
+- Fallback 多來源合併不覆蓋主內容
+- webhook/email 通知自動摘要可用
 
 ---
 
-## 🚧 進行中 / 待辦事項
+## 🚧 進行中／待辦事項
 
-- **資料結構升級** Newsletter 詳細 JSON 支援 voiceover 欄位（音檔 Storj）
-- **前端功能增強** UI 持續優化，語音播放器渲染、動畫、主題切換、標籤過濾、全文搜尋
-- **Storj 整合** 音檔和 JSON 同步 Storj，跨域讀取 Storj 公網路 URL
-- **SEO/OGP** 靜態快照、meta 產生，提升搜尋與社群預覽
-- **資料聚合** 多來源自動合併、重覆內容去重
-- **API／外掛互動** 規劃留言互動、社群插件
-- **多語系、社群工具、安全/a11y**
+- **資料結構升級** Newsletter JSON voiceover 欄位（音檔 Storj 直連）
+- **前端功能優化** 音檔播放器渲染、動畫、主題切換、標籤搜尋
+- **Storj 整合** 自動同步音檔及 JSON 連結至 Storj 網路
+- **SEO/OGP** meta 自動產生、社群預覽與快照
+- **多平台聚合/去重** 多來源 RSS／檔案合併同步機制
+- **API/社群互動** 留言、SNS外掛、a11y適配
+- **IPFS主站+Storj分流策略** 完整去中心化部署
+- **信件通知/監控** Post-commit summary & Gmail 用戶通知
 
 ---
 
 ## 🎯 專案現況總結
 
-GCAKE.Space 創作者個人網站已達成核心目標：
-- 內容自動更新機制運作穩定
-- 多平台備援策略部署完成
-- 前後端一體化流程建置完畢
-- IPFS 傳播可行性驗證通過
+- 核心架構／自動同步／資料備援已穩定運作
+- 多來源 fallback/合併、音檔補欄與前端渲染一致
+- IPFS 傳播可行性通過驗證
+- workflow CI/CD + email 通知到位
+- 後續重點：
+   1. 音檔同步 Storj 自動化，voiceover 欄與播放器強化
+   2. 搜尋/互動/標籤等前端體驗全面升級
+   3. 逐步全 Web3 技術棧去中心化部署
 
-**下一階段重點：**
-1. 語音內容升級 - voiceover 音訊整合與 Storj 直連
-2. 用戶體驗優化 - 搜尋、過濾、互動功能
-3. 去中心化完善 - 完整 Web3 技術棧部署
+**GCAKE.Space 正朝 Web3 分層備份與自家主控權內容運營邁進！**

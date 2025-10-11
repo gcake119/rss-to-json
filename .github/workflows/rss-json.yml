@@ -10,7 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      EMAIL_TO: wwhowbuhow@pm.me
+
     steps:
+      # ---------------------------------------------------------------
+      # Step 1. repository & dependencies
+      # ---------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -22,7 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Podcast 1
+      # ---------------------------------------------------------------
+      # Step 2. RSS→JSON、資料合併、主要內容更新
+      # ---------------------------------------------------------------
       - name: Podcast_1 RSS → JSON (skip on error)
         env:
           FEED_URL: https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh
@@ -39,7 +47,6 @@ jobs:
             exit 0
           fi
 
-      # Podcast 2
       - name: Podcast_2 RSS → JSON (skip on error)
         env:
           FEED_URL: https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1
@@ -56,7 +63,6 @@ jobs:
             exit 0
           fi
 
-      # Newsletter 1
       - name: Newsletter_1 Substack RSS → JSON and MERGE fallback Paragraph RSS
         env:
           SUBSTACK_FEED: https://wwhowbuhow.substack.com/feed
@@ -79,12 +85,10 @@ jobs:
               echo "[WARN] Paragraph RSS also failed. Keep previous JSONs and continue."
               exit 0
             fi
-            # 合併 Paragraph RSS 的更新（Python or Node.js 腳本，僅新增比主 repo 最新的資料）
             node scripts/newsletter_merge_fallback.js --primary "$SUBSTACK_DIR" --fallback "$PARAGRAPH_DIR"
           fi
           set -e
 
-      # Newsletter 2
       - name: Newsletter_2 Substack RSS → JSON and MERGE fallback Paragraph RSS
         env:
           SUBSTACK_FEED: https://taiweb3.substack.com/feed
@@ -111,14 +115,58 @@ jobs:
           fi
           set -e
 
-      # Commit changes if any
+      # ---------------------------------------------------------------
+      # Step 3. 自動補寫 voiceover 欄位到 newsletter JSON（Storj檢查及同步）
+      # ---------------------------------------------------------------
+      - name: Update newsletter JSON with voiceover mp3 URLs from Storj
+        run: |
+          node scripts/newsletter_voiceover_sync.js --voiceover_dir "./voiceover/newsletter_1" --json_dir "data/newsletter/newsletter_1"
+          node scripts/newsletter_voiceover_sync.js --voiceover_dir "./voiceover/newsletter_2" --json_dir "data/newsletter/newsletter_2"
+
+      # ---------------------------------------------------------------
+      # Step 4. 自動分析異動檔案回傳分類摘要+emoji，以及組成 commit message
+      # ---------------------------------------------------------------
+      - name: Generate auto summary/commit message
+        id: summary
+        run: |
+          node scripts/auto_commit_msg.js > commitmsg.txt
+          echo "COMMIT_MESSAGE=$(cat commitmsg.txt)" >> $GITHUB_ENV
+          echo "DIFF_SUMMARY=$(cat commitmsg.txt)" >> $GITHUB_ENV
+
+      # ---------------------------------------------------------------
+      # Step 5. Commit changes（如有更新）
+      # ---------------------------------------------------------------
       - name: Commit JSON outputs (only when changed)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/
-            git commit -m "chore: update JSON from podcast/newsletter RSS (skip failed feeds, merge fallback new items)"
+            git commit -m "${{ env.COMMIT_MESSAGE }}"
             git push
           else
             echo "No JSON changes to commit."
+          fi
+
+      # ---------------------------------------------------------------
+      # Step 6. Post-commit Email notification
+      # ---------------------------------------------------------------
+#      - name: Email RSS/JSON Workflow Diff Summary
+#        if: success()
+#        uses: dawidd6/action-send-mail@v3
+#        with:
+#          server_address: smtp.gmail.com
+#          server_port: 465
+#          username: ${{ secrets.EMAIL_USER }}
+#          password: ${{ secrets.EMAIL_PASS }}
+#          subject: "[GCAKE RSS/JSON] ${{ env.COMMIT_MESSAGE }}"
+#          to: ${{ env.EMAIL_TO }}
+#          from: RSS Workflow <noreply@yourdomain>
+#          content_type: text
+#          body: |
+#            Pipeline: ${{ github.workflow }}
+#            Branch: ${{ github.ref }}
+#            Commit: ${{ github.sha }}
+#            ------
+#            Workflow Diff Summary:
+#            ${{ env.DIFF_SUMMARY }}
