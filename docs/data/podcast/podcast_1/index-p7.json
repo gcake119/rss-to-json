@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 7,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-12T12:21:26Z",
+  "items": [
+    {
+      "slug": "2022Q4e06",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 呀！《First Love 初戀》Netflix 話題劇不暴雷觀影體驗",
+      "pub_date": "2022-12-27T12:19:12Z",
+      "duration": "24:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/I13m0NlIm4p1XdfxeKdOT.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clc66ttca05qa01zybi61f0ei/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclc66ttca05qb01zy7zv91hux.mp3?v=1734018343868",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q4e05",
+      "id": "[object Object]",
+      "title": "寒流注意，雞蛋糕與你共勉之！",
+      "pub_date": "2022-12-16T15:50:55Z",
+      "duration": "04:59",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/3IZxoFjrPGIlsRysHuWOY.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clbqot9s5000601tya4au9mhf/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclbqot9s5000701tyay325efz.mp3?v=1733715802123",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q4e04",
+      "id": "[object Object]",
+      "title": "《城門城門幾丈高》第 13 集 錢不是問題，問題是沒錢",
+      "pub_date": "2022-10-27T17:22:15Z",
+      "duration": "01:18:02",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/WROBJ210iGoav3XHAEeuV.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl9rc0x9500re01xu537khsvw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcl9rc0x9500rf01xubg6v0icf.mp3?v=1732359936948",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q4e03",
+      "id": "[object Object]",
+      "title": "[草木燉雞] 憂鬱症有康復的可能嗎？ ft. 《草木談心》",
+      "pub_date": "2022-10-14T08:35:16Z",
+      "duration": "35:12",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/QBccKVdOgI3s3abZ92AQU.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl988emhx0ly6010kchp4f7ps/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcl988emhx0ly7010k9fg19xvc.mp3?v=1733671563993",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q4e02",
+      "id": "[object Object]",
+      "title": "[草木燉雞] 開始諮商之前經歷了什麼？！ ft. 《草木談心》",
+      "pub_date": "2022-10-06T03:21:52Z",
+      "duration": "25:39",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/C6KweEe8pL_TGuTnSQW-x.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl8whs37h08kg01wl8ul05nh2/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcl8whs37h08kh01wlbphq3czx.mp3?v=1733672330142",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q4e01",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 節目第六季，2022 年進入 Q4 了啊啊啊！",
+      "pub_date": "2022-10-06T02:49:10Z",
+      "duration": "16:11",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/4jxOLSC-WxiiwhZph5pCZ.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl8wgm8c2000201v31g5ydk8c/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcl8wgm8c2000301v3dzx250ho.mp3?v=1733993567115",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q2e03",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 這場演講沒有PPT，我希望你可以帶走你記得的內容就好",
+      "pub_date": "2022-04-18T23:01:00Z",
+      "duration": "01:05:55",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/GssqHTruiS7fyUJa_Rz7L.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl2507j4e0z2101w66w2xgak8/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcl2507j4e0z2201w6dv9d5omr.mp3?v=1732359959471",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q2e02",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 今天，我要演講的題目是……",
+      "pub_date": "2022-04-07T23:01:00Z",
+      "duration": "52:59",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/WRluubgGSmOKNneca9euS.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl1pfh11t00r30h2dh8ei0vvd/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcl1pfh11t00r40h2df9qk6gxa.mp3?v=1732359888044",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q1e01",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 2022，回顧 2020 的《想見你》之後",
+      "pub_date": "2022-03-19T19:16:11Z",
+      "duration": "22:46",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1647717364429.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cl0y8dimz01gz0h2705y44c3y/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1647717363611.mp3?v=1731405959535",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2022Q1e16",
+      "id": "[object Object]",
+      "title": "[草木燉雞] 憂鬱症症狀長怎樣？ ft. 《草木談心》",
+      "pub_date": "2022-01-10T23:00:00Z",
+      "duration": "01:01:20",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1641832336511.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cky8wl5f11t7w0960pqnn3egm/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1641832336511.mp3?v=1733671609399",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

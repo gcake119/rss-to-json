@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 2,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-12T12:21:26Z",
+  "items": [
+    {
+      "slug": "2024Q2e13",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 致每一個感覺自己不敢求助的你",
+      "pub_date": "2024-05-23T13:57:15Z",
+      "duration": "07:13",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clwjbhgrq00rx01wl3dhr5b7l/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclwjbhgrq00ry01wle4yievks.mp3?v=1752028960028",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q2e12",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 雞蛋糕開刀去-1：我那些不太典型的鬱症症狀、睡眠呼吸中止症、睡眠生理檢查",
+      "pub_date": "2024-05-18T14:50:21Z",
+      "duration": "19:25",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/ldnXvs7levfS5Usn68VFy.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clwc86an41bdt01xifr172x27/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclwc86an41bdu01xif1zdchpg.mp3?v=1752044260722",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q2e11",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 報名廣播金鐘獎，是個不容易的決定",
+      "pub_date": "2024-04-12T15:33:53Z",
+      "duration": "40:08",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/yiIF8-GnrqZQvi5Y1A6TA.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cluwtv5r90kqp01ujauh8fmxw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcluwtv5r90kqq01uj5p4c35mo.mp3?v=1756956465409",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q2e10",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 腳踏車來回關廟，我蚌！不自殺聲明／不自殺契約有用嗎？",
+      "pub_date": "2024-04-02T12:13:02Z",
+      "duration": "26:11",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/pyA8nD9bc6DNNWSt-N7Uo.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cluicanc100af010c61d3hjp1/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcluicanc100ag010ccn6t9qgb.mp3?v=1759806813565",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e09",
+      "id": "[object Object]",
+      "title": "[說書好不好] 謝謝李屏瑤《台北家族，違章女生》，讓我可以溫柔對待小鬱風暴以來的大小傷口",
+      "pub_date": "2024-03-20T02:02:10Z",
+      "duration": "21:27",
+      "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cltz5r1q20m9w01w1cn8x7q0d/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcltz5r1q20m9x01w1e7afgfgc.mp3?v=1752748000644",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e08",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 氣到直接錄音開罵：「憂鬱症Q&A之陪伴者可以做的十件事」",
+      "pub_date": "2024-03-18T12:44:10Z",
+      "duration": "29:49",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/hTEszm3tHlGijOj95gkT8.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cltwxstdy07qf01w1b55y33gy/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcltwxstdy07qg01w16pdb1krt.mp3?v=1756655933527",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e07",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 插播：手術預告",
+      "pub_date": "2024-03-16T19:51:47Z",
+      "duration": "08:25",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/iHtv_beUeLkk0Cz2F4z8G.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cltui7g7w0bt601uu0x4e7t48/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcltui7g7w0bt701uu6cd7b2ra.mp3?v=1760025765017",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e06",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱風暴後報平安，以及一個黃昏市場遇見的好故事",
+      "pub_date": "2024-03-15T12:27:27Z",
+      "duration": "31:14",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/kaQia0QQEjcBXziJYEY4L.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cltsmvrse03q801w2h0xef9s7/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcltsmvrse03q901w2anffgdd1.mp3?v=1752028995423",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e05",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 回應聽友留言：那些無處討論的失落、結束諮商關係、剛好掉出社會安全網的生活困境",
+      "pub_date": "2024-03-05T14:21:54Z",
+      "duration": "01:01:21",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/3yn8NmJnVkbt6LhjFSTnC.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/cltegjjbt00ww01xp5svh3w3w/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fcltegjjbt00wx01xp5dzqhkdq.mp3?v=1756655972891",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2024Q1e04",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 插播：高中職心理假試辦上路，還要過家長那關，越想越介意！",
+      "pub_date": "2024-02-27T01:02:01Z",
+      "duration": "21:19",
+      "image": "https://image.firstory-cdn.me/Image/ck60hb2c90wp50873k099tilh/QgGTiNU-qhRoAn7eBAJ55.jpg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/clt3nwzu90c8i01waet7h3c3t/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2Fclt3nwzu90c8j01wa9kxsbrez.mp3?v=1752747962453",
+        "type": "audio/mpeg"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}
