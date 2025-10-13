@@ -1,3 +1,5 @@
+import '/css/style.css'
+import '/css/theme-gruvbox.css'
 import { renderPodcastList, renderPodcastDetail } from './podcast.js';
 import { renderNewsletterList, renderNewsletterDetail } from './newsletter.js';
 import { params } from './util.js';
