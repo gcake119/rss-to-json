@@ -1,97 +1,84 @@
 # 🎯 GCAKE.Space 雞蛋糕個人創作者網站專案進度總結
 
-**更新時間：** 2025年10月12日 23:58 PM  
+**更新時間：** 2025年10月14日 01:12 AM  
 **GitHub repo：** [gcake119/rss-to-json](https://github.com/gcake119/rss-to-json)  
-**測試網站：** [gcake119.github.io/rss-to-json](https://gcake119.github.io/rss-to-json/)
+**測試站（開發用途）：** [gcake119.github.io/rss-to-json](https://gcake119.github.io/rss-to-json/)
 
 ---
 
 ## 📋 專案概述
 
-利用 **ENS**、**IPFS**、**RSS feeds**、**Storj** 等 Web3 技術建立去中心化的內容創作者網站：
+結合 **ENS**、**IPFS**、**RSS feeds**、**Storj** 等 Web3 技術，建置無伺服器、去中心化的個人內容平台：
 
-- Podcast 與 Newsletter 內容自動同步
-- 分散式備援與無縫內容分發
-- 全站無伺服器，僅負擔 ENS 年費 + 上鏈 gas
+- Podcast / Newsletter 內容自動同步 & 靜態化流程
+- 分散式備援，支援多平台異地分發
+- 只需負擔 ENS 年費及必要上鏈 gas，主站永久免管維運
 
 ---
 
-## 🏗️ 網站架構
+## 🏗️ 網站架構與開發流程
 
 ### 前端技術
-- 純原生 JS SPA（hash 路由、卡片式多頁面）
-- Gruvbox 暗色系響應式主題
-- Podcast/Newsletter 詳細分頁完整渲染
-- Newsletter 支援主圖、語音欄位
+- 原生 JS 實作 SPA，支援 hash 路由與多分頁卡片式互動
+- Gruvbox 暗色主題，支援響應式佈局
+- 分頁細節渲染完善，Newsletter 支援主圖與語音欄位
+- 入口 app.js 採用 ES module 標準，CSS 統一用 import 控管，確保打包完整
+- 移除了 index.html 的 `<link rel="stylesheet">`，一律由 JS import 控制樣式
 
-### 資料流程
-- RSS 轉 JSON 靜態化，前端 fetch 載入內容
-- Firstory Podcast 播放/封面自動嵌入
-- GitHub Actions 定時同步 RSS feeds，自動補齊 slug/cover/image 欄位
+### 開發與打包
+- 移轉至 Cursor IDE 開發，支援即時預覽與 terminal 直接操作，開發體驗大幅升級
+- 補足 npm build 打包步驟，scripts 全自動 cp 同步 data/assets/css 到 dist/docs，解決靜態檔案漏打包問題
+- Vite 設定 outDir=docs、base=./，build 結果與預覽完全一致
+- `npm run deploy` 一次完成 build、靜態檔案同步、docs 更新與 git push，無需手動處理繁瑣流程
+- 測試階段主機完全用 GitHub Pages（main/docs），僅作開發用 preview 站
+
+### 資料流與自動化
+- RSS 轉 JSON 自動化腳本、GitHub Actions 定時同步，提供最新資料串給前端
+- Storj 管理所有 Podcast/Newsletter 多媒體內容，資料網址納入 json 靜態資料，供前端 fetch
+- 前端所有 fetch 路徑均採相對路徑設計，確保 build、deploy 結果一致不出錯
 
 ### 部署策略
-- GitHub Pages：靜態站維護主站，CI/CD 自動化測試＋部署
-- 網站靜態架構完成後才推送 IPFS、設定 ENS 轉址（節省多次上鏈 gas 費）
-- 動態資料（Podcast/Newsletter/語音）規劃 fetch Storj 公網 JSON 資料
-- IPFS 免費空間規劃：主站僅數十KB～數百KB，Pinata 1GB 免費額度非常足夠
+- **GitHub Pages 現階段僅作為開發測試站**，協助 debug & 預覽網站運作，未來不當作終端用戶入口
+- 網站正式版僅部署一次到 IPFS，之後所有動態內容皆透過 Storj 公開網址提供
+- ENS 連結最新 IPFS hash 作為真正入口（最終用戶連線位址）
 
 ---
 
 ## 📊 資料結構設計
 
-- `/data/podcast/{podcast_N}/`   Podcast 資料結構  
-- `/data/newsletter/{newsletter_N}/`   Newsletter 資料結構  
-- `/data/voiceover/{newsletter_N}/`   Newsletter 語音檔（規劃中）  
+- `/data/podcast/{podcast_N}/`   Podcast 靜態結構（含 Storj 多媒體網址）
+- `/data/newsletter/{newsletter_N}/`   Newsletter 靜態結構（含語音、主圖 Storj url）
+- `/assets/` 前端必須的圖片/logo
+- `/css/` 主題樣式、響應式設計檔案
+- `/docs/` 為 build/deploy 官方唯一可展示資料夾，僅供測試站用途
 
 ---
 
-## ✅ 已完成功能／測試項目
+## ✅ 修正與成效
 
-### 內容體驗
-- SPA 多分頁 hash 路由與主題 UI 運作無誤
-- Podcast/Newsletter 詳細卡片分頁渲染
-- Firstory 播放器 iframe、cover 自動切換
-- Newsletter 圖像優化、排版去重、內文清理
-
-### 自動化與資料處理
-- RSS 轉 JSON 自動欄位補齊、slug/cover/image結構優化
-- 多 RSS 來源合併＋異常不覆蓋原內容
-- Github Actions CI 做到最新內容自動部署  
-- Storj bucket 已建立 & access key 已設 secret  
-- aws-sdk（S3 Gateway）**已完成安裝，尚待實測連線/批次上傳**
-
-### 技術驗證
-- ✔️ GitHub Pages 靜態分頁、API響應、SPA UI全數通過
-- ✔️ 多來源 Podcast/Newsletter、cover／語音欄位初步串接成功
+- 解決 historic build/檔案漏同步，如 data/assets/css，流程全自動化、build 不再遺漏
+- 前後端分工明確，靜態展示與原始碼完全分離，各自 git 管理
+- deploy 流程優化為純腳本自動化，開發效率大幅提升
+- SPA 路由、fetch 靜態資料、主題樣式完全穩定，能即時預覽每次修改成果
 
 ---
 
-## 🚧 進行中／待辦事項
+## 🚧 待辦/優化
 
-- **Storj實測** aws-sdk（S3 Gateway）實際連線與上傳批次測試  
-- **Newsletter JSON結構升級** 主圖、音檔 Storj欄位同步自動補全  
-- **a11y設計** 全站無障礙語意標記、aria/alt、tab鍵盤導航
-- **前端功能增強** 語音播放器／搜尋／動畫／主題切換
-- **SEO/OGP** meta/ogp產生加強搜尋與社群友好
-- **多語系留言API、互動支援、社交分享**  
-- **IPFS推送/ENS解析/全站分散主機施作**  
-- **Storj媒體備份流程、批次異常處理與自動 fallback**  
-- **資料聚合與API外掛** 讚/留言/社群功能雛形  
-- **GitHub Actions 工作流優化與自動升級**
+- Storj 多媒體內容上傳流程測試與優化
+- Newsletter JSON 結構升級，主圖和音檔同步 Storj 公網網址自動補全
+- IPFS 上線一次永久 hash，後續全部內容變動由 Storj 備援
+- a11y、SEO、API 或資料聚合功能持續開發
+- ENS 指向 IPFS hash、主站去中心化與網域轉址整合
 
 ---
 
-## 🎯 專案現況總結
+## 🎯 專案現況
 
-- 主站內容自動化、靜態 SPA、多平台備援結構已就緒
-- Storj aws-sdk安裝已完成，待下階段進行連線與批次上傳測試
-- Github workflow + RSS資料同步穩定可用，靜態主站運作良好
-
-**下一步重點：**
-1. Storj連線＆多媒體自動批次上傳測試
-2. 完善主站/備站推送流程與 fallback 機制
-3. 部署 Web3(IPFS+ENS)+Storj備援，全面進入分散式內容服務
-4. a11y、SEO、API販售/社群互動、資料聚合等進階開發
+- 前、後端與自動化流程皆穩定運作，已可高效率進行快速測試/部屬/回滾
+- GitHub Pages 只作為開發階段 preview，不作正式公開站
+- IPFS+ENS 部屬架構已規劃，下一步將主力開發 Storj 備援內容與分布式自動更新腳本
 
 ---
-**待辦事項已記錄：明天執行 Storj 正式連線與批量上傳測試，自動備援流程開發啟動！**
+
+**目前一切以「高效率開發－快速部署測試」為首要目標，將所有工程、資料、展示流程拆分，準備大規模內容防呆備援與自動化部署！**
