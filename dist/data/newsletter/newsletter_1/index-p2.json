@@ -1,0 +1,21 @@
+{
+  "type": "newsletter",
+  "page": 2,
+  "page_size": 10,
+  "total_items": 11,
+  "total_pages": 2,
+  "updated_at": "2025-10-10T15:07:49+08:00",
+  "items": [
+    {
+      "id": "https://wwhowbuhow.substack.com/p/welcome",
+      "slug": "welcome",
+      "title": "嗨嗨，歡迎來到《喂喂好朋友抱報》",
+      "pub_date": "2024-05-18T08:00:00+08:00",
+      "link": "https://wwhowbuhow.substack.com/p/welcome",
+      "cover": "https://substackcdn.com/image/fetch/$s_!Lneq!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f82d0a9-e4f1-4a03-ae2e-a7bfe53052e7_1280x1280.png",
+      "has_voiceover": false,
+      "tags": [],
+      "permalink": "#newsletter/welcome"
+    }
+  ]
+}

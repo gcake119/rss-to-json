@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 18,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-12T12:21:26Z",
+  "items": [
+    {
+      "slug": "2020Q2e24",
+      "id": "[object Object]",
+      "title": "[說書好不好] S1E3 書海衝浪 pt.3 書海衝浪的三種好載具：紙本書、電子書和有聲書",
+      "pub_date": "2020-04-04T10:31:10Z",
+      "duration": "33:29",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1609490156402.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8lh8a7df9zr087370v1fwma/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1585309328859.m4a?v=1609490167093",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e23",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 什麼時候該去找精神科(身心科)醫生和心理師？、推薦書：《受傷的醫者》",
+      "pub_date": "2020-04-03T10:01:17Z",
+      "duration": "25:15",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343355117.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8k0pzwkcag80873llkf06pn/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1584948524994.m4a?v=1609483501278",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q2e22",
+      "id": "[object Object]",
+      "title": "[開槓好不好] COVID-19肺炎 podcaster防疫衛教串連活動",
+      "pub_date": "2020-04-01T13:23:37Z",
+      "duration": "13:09",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343388153.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8hd2i0d6q3e0873u3sk272k/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1585747357673.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e21",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.1 你有一則來自雞蛋糕的留言：Apple Podcast 天字第一號與第二號留言、感謝抖內的乾爹乾媽 (抽雞蛋糕手寫明信片)",
+      "pub_date": "2020-03-31T10:01:17Z",
+      "duration": "22:31",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588161679407.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8fqefsa3iih0873s002n6cg/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1585490918519.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e20",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.0 你有一則來自雞蛋糕的留言：雞蛋糕想跟你說……",
+      "pub_date": "2020-03-29T09:01:16Z",
+      "duration": "09:56",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588161702394.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8ctdjtny1os0873h59jwjge/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1585414306402.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e19",
+      "id": "[object Object]",
+      "title": "[說書好不好] S1E2 書海衝浪 pt.2 - 音浪太強，平台都在你的手機上：雞蛋糕推薦你Podcast的收聽好App",
+      "pub_date": "2020-03-28T10:31:10Z",
+      "duration": "19:23",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1609489939589.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8bh5be7x5140873hkas38ds/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1583329953377.m4a?v=1609489946546",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e18",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 雞蛋糕朗讀：鄧惠文醫師回應「不知足」事件",
+      "pub_date": "2020-03-27T10:01:15Z",
+      "duration": "12:59",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343445843.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck8a0mzc0w67i087344iqcaju/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1584948417077.m4a?v=1609483297810",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e17",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 0322 Bonus 電池壞掉人雞蛋糕製作Podcast的省電SOP、推薦：台灣本土的Hosting服務平台(Firstory, SoundOn, Baabao)",
+      "pub_date": "2020-03-22T15:24:08Z",
+      "duration": "49:12",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343467867.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck836yyoqeuwc0873um7mcrr4/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1584890586481.m4a?v=1593489966510",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e16",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 被小鬱亂入的生活-3：眼中只看得見一條路、推薦書：《雖然痛苦到想死，卻無法辭職的理由》、推薦影片：泰辣婚禮記錄",
+      "pub_date": "2020-03-21T10:01:17Z",
+      "duration": "28:01",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343494221.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck81fzxgaax9y0873dys4hdy2/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1583882045760.m4a?v=1609482918365",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q1e14",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 0320 真。斜槓ㄉ雞蛋糕跑通告",
+      "pub_date": "2020-03-20T10:01:15Z",
+      "duration": "35:14",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1588343514680.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ck800k0ve7mus0873j1dcejtx/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1584637336630.m4a",
+        "type": "audio/mp4"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}
