@@ -1,0 +1,96 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "雞蛋糕孵蛋中 GCAKE Delivery－讓所有故事。破。蛋。而。出。",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://d3mww1g1pfq2pt.cloudfront.net/Avatar/ckfqmqknj6k7e0800m9lk8at1/1601642598286.png",
+    "link": "https://gcake-delivery.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 2,
+  "page_size": 10,
+  "total_items": 16,
+  "total_pages": 2,
+  "updated_at": "2025-10-12T12:21:26Z",
+  "items": [
+    {
+      "slug": "2020Q4e04",
+      "id": "[object Object]",
+      "title": "[Kakudan。祭敘] 11/07-11/08 邀請你來佳平聽原住民青年說部落的故事 ft.法法漾播客 Ubi",
+      "pub_date": "2020-11-03T23:01:11Z",
+      "duration": "42:05",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1604388531831.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckh2kt95z61lj0836ge1izzgb/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1604388531831.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e03",
+      "id": "[object Object]",
+      "title": "雞蛋糕幕後說：關於故事怎麼說，不藏私、全部告訴你",
+      "pub_date": "2020-11-03T23:01:11Z",
+      "duration": "03:09",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1604395887767.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckh2kt95z61lk0836oyxeyffw/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1604395887767.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e05",
+      "id": "[object Object]",
+      "title": "雞蛋糕幕後說：遠距網路通訊錄音和剪輯想法 ft. 法法漾播客 Ubi [KAKUDAN] 活動聯名特輯",
+      "pub_date": "2020-11-03T23:01:11Z",
+      "duration": "21:18",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1604396696488.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckh2kt95z61ll08368vnjsrfe/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1604396696488.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e02",
+      "id": "[object Object]",
+      "title": "Firstory 首場 #Podty 實體活動 出席名額快閃抽獎 (10/23 12:00截止)",
+      "pub_date": "2020-10-21T16:07:11Z",
+      "duration": "04:30",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1603296426977.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckgjlarl81zix082218hdssgn/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1603296426977.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e02",
+      "id": "[object Object]",
+      "title": "雞蛋糕的新嘗試：引導和記錄眼前的聲音故事",
+      "pub_date": "2020-10-06T13:59:16Z",
+      "duration": "04:30",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1601992750539.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckfy14ha8xpeh0800uo8w9akx/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1601992750539.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e01",
+      "id": "[object Object]",
+      "title": "雞蛋糕四界走：戳戳孵蛋中的未來Podcaster，讓所有故事破蛋而出",
+      "pub_date": "2020-10-02T12:39:22Z",
+      "duration": "00:27",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Image/ckfqmqknj6k7e0800m9lk8at1/1601642359956.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ckfqmqknj6k7e0800m9lk8at1/ckfs8ibjwr6kj0800tuy3bs86/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckfqmqknj6k7e0800m9lk8at1%2F1601642359956.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}

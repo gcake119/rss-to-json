@@ -1,0 +1,148 @@
+{
+  "type": "podcast",
+  "show": {
+    "id": "show",
+    "title": "喂喂你還好不好",
+    "author": "雞蛋糕 GCAKE",
+    "image": "https://image.firstory-cdn.me/Avatar/ck60hb2c90wp50873k099tilh/1752846373303.jpg",
+    "link": "https://wwhowbuhow.firstory.io",
+    "language": "zh-Hant"
+  },
+  "page": 12,
+  "page_size": 10,
+  "total_items": 196,
+  "total_pages": 20,
+  "updated_at": "2025-10-12T12:21:26Z",
+  "items": [
+    {
+      "slug": "2020Q4e32",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 來自現役小鬱陪伴者的暖心訊息、尼克小姐(IG: ot_ishere)的換季溫馨問候、節目未來微幅調整說明",
+      "pub_date": "2020-11-15T23:01:12Z",
+      "duration": "30:33",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1605457998547.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckhjq3i0lrvwt0882vlq0rzpk/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1605457998547.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e31",
+      "id": "[object Object]",
+      "title": "《小柔的最後一天》體驗式桌遊－Podcaster里民服務處專場 2020/10/18 Live Podcast",
+      "pub_date": "2020-11-08T11:25:55Z",
+      "duration": "26:45",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1604834744770.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckh916e06dbo60888h2y8uamo/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1604834744770.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e30",
+      "id": "[object Object]",
+      "title": "[Kakudan。祭敘] 金曲大贏家阿爆阿仍仍的世界級MV取景地在屏東佳平法蒂瑪聖母堂！11/07-11/08 邀請你來佳平聽原住民青年說部落的故事 ft.法法漾播客 Ubi",
+      "pub_date": "2020-10-29T23:31:40Z",
+      "duration": "42:05",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1603994362083.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckgvgoymh8m04090352macpae/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1603994362083.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e29",
+      "id": "[object Object]",
+      "title": "[開槓好不好] 1017 Podcast 里民大會會後感想IG快閃直播精華、百靈果10/31台南佈道大會活動預告",
+      "pub_date": "2020-10-29T06:38:13Z",
+      "duration": "29:44",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1603953485414.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckgughw66093r0894og36erjd/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1603953485414.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e28",
+      "id": "[object Object]",
+      "title": "[說書好不好] 雞蛋糕愛看書-6：一個諮商心理師和她的心理師，以及她的個案們的故事－《也許你該找人聊聊》 (Readmoo讀墨贊助電子書)",
+      "pub_date": "2020-10-27T08:33:12Z",
+      "duration": "51:35",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1603787582208.png",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckgrpq1q5pxym0803k5rmxoos/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1603787582208.m4a?v=1603861408484",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e27",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] SP.6 如果雞蛋糕的聲音能夠給你一點陪伴，我很榮幸！、推薦歌曲：好樂團《我們一樣可惜》",
+      "pub_date": "2020-10-16T14:12:09Z",
+      "duration": "57:39",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1602857516510.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckgcbzkjp70b508754jyo2xhd/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1602857516510.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e26",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-12：走出諮商室的深夜練習－自我耙梳被小鬱襲擊的脈絡",
+      "pub_date": "2020-10-09T10:01:12Z",
+      "duration": "29:30",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1600346090948.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckg22xw9pkc530875xh4914cz/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1600346090948.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e24",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-11：休養、治療跟養病是燒錢又費時的事，患者常常成為經濟弱勢，來聊聊個人財務規劃！ feat. 公務信箱 der 上進多魚、推薦書《養錢練習》、推薦Podcast《抹黑客》",
+      "pub_date": "2020-10-03T10:01:17Z",
+      "duration": "01:33:19",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1601637662689.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckftiaw7c6sg508009nw3uu8w/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1601637662689.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q4e23",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 基層公務員的心理諮商資源和實際申請使用的困境 feat. 公務信箱 der 多魚、切心和C大",
+      "pub_date": "2020-10-02T10:01:20Z",
+      "duration": "28:33",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1600343462379.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckfs2v3sbosug0800pijkscs3/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1600343462379.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    },
+    {
+      "slug": "2020Q3e22",
+      "id": "[object Object]",
+      "title": "[小鬱好不好] 小鬱亂入的生活-10：練習因應天氣狀況控制生理和心理症狀",
+      "pub_date": "2020-09-26T05:40:11Z",
+      "duration": "14:23",
+      "image": "https://file.cdn.firstory.me/Image/ck60hb2c90wp50873k099tilh/1601098808260.jpeg",
+      "audio": {
+        "url": "https://m.cdn.firstory.me/track/ck60hb2c90wp50873k099tilh/ckfj8w5isovx90836164gfk70/https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fck60hb2c90wp50873k099tilh%2F1601098808260.m4a",
+        "type": "audio/x-m4a"
+      },
+      "permalink": "#podcast/objectObject"
+    }
+  ]
+}
