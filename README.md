@@ -27,7 +27,7 @@
 
 ### 開發環境
 
-- 全程 Cursor IDE 本機開發，npm run dev 預覽、npm run build 一鍵生產
+- 全程 Cursor IDE 本機開發，npm run dev 預覽、npm run deploy 一鍵打包與發佈測試站
 - Vite、GitHub Pages、IPFS同步公開測試預覽，deploy/version control皆自動化
 - IPFS/ENS部署流程清楚，適合開源長期維護
 
