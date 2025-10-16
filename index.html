@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>雞蛋糕的多重宇宙｜GCAKE.Space</title>
+  <!-- 主題樣式、響應式（建議放 build/css/style.css 與主題色） -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-gruvbox.css">
 </head>
 <body>
   <header>
@@ -12,21 +15,22 @@
       <strong>雞蛋糕的多重宇宙｜GCAKE.Space</strong>
     </div>
     <nav>
+      <!-- 改成 hash route對應現有 ROUTES  -->
       <a href="#home">Home</a>
-      <a href="#podcast">Podcast</a>
-      <a href="#podcast2">Podcast2</a>
-      <a href="#newsletter">Newsletter</a>
-      <a href="#newsletter2">Newsletter2</a>
+      <a href="#podcast_1">Podcast</a>
+      <a href="#podcast_2">Podcast2</a>
+      <a href="#newsletter_1">Newsletter</a>
+      <a href="#newsletter_2">Newsletter2</a>
       <a href="#works">Works</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  <main id="app"></main>
+  <!-- SPA 主渲染區，id="main-content" 對應 app.js -->
+  <main id="main-content"></main>
   <footer>
     <p>© 2025 GCAKE.Space</p>
   </footer>
-
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
