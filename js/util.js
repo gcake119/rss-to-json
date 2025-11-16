@@ -31,10 +31,14 @@ export function paginate(arr, page = 1, size = 10) {
   return arr.slice((page - 1) * size, page * size);
 }
 export function renderPager(container, totalPages, currentPage, callback) {
-  // callback 是 function(pageNum) {...}
   let html = '';
   for (let p = 1; p <= totalPages; p++) {
-    html += `<button onclick="${callback.name}(${p})"${p===currentPage?' style="font-weight:bold"':''}>${p}</button> `;
+    html += `<button type="button" data-page="${p}"${p===currentPage?' style="font-weight:bold"':''}>${p}</button> `;
   }
   container.innerHTML = html;
+
+  // 加事件代理
+  container.querySelectorAll('button[data-page]').forEach(btn => {
+    btn.onclick = () => callback(Number(btn.getAttribute('data-page')));
+  });
 }

@@ -7,7 +7,9 @@ import cliProgress from "cli-progress";
 // 轉換多個 podcast feed
 const podcasts = [
   { id: "podcast_1", feed: "https://feed.firstory.me/rss/user/ck60hb2c90wp50873k099tilh" },
-  { id: "podcast_2", feed: "https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1" }
+  { id: "podcast_2", feed: "https://feed.firstory.me/rss/user/ckfqmqknj6k7e0800m9lk8at1" },
+  { id: "podcast_1n", feed: "https://feed.firstory.me/rss/user/ckplzfqv7939208200d0uh0as" },
+  { id: "podcast_2n", feed: "https://feed.firstory.me/rss/user/cmgx8vsi201tt01tm0673618o" }
 ];
 
 async function fetchAndParseRSS(feedUrl) {

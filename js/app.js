@@ -1,67 +1,68 @@
-import '../css/style.css'
-import '../css/theme-gruvbox.css'
-import { params } from './util.js';
+/* ========== MODULE:IMPORTS-START ========== */
+import '/style.css';
 import { staticPages } from './staticContent.js';
-import { pagePodcast1, pagePodcast2, pageNewsletter1, pageNewsletter2 } from './pages.js';
+// 這兩個渲染模組各自同時提供列表和詳頁函式
 import { renderPodcastList, renderPodcastDetail } from './podcast_render.js';
 import { renderNewsletterList, renderNewsletterDetail } from './newsletter_render.js';
+import { renderHome, renderWorks, renderAbout, renderContact } from './static_render.js';
+/* ========== MODULE:IMPORTS-END ========== */
 
+/* ========== MODULE:ROUTES-START ========== */
+const main = document.getElementById('main-content');
+// 定義 SPA 路由表，每頁配對渲染函式
+const routes = {
+  // 靜態頁
+  '': () => main.innerHTML = renderHome(staticPages.home),
+  'home': () => main.innerHTML = renderHome(staticPages.home),
+  'about': () => main.innerHTML = renderAbout(staticPages.about),
+  'contact': () => main.innerHTML = renderContact(staticPages.contact),
+  'works': () => main.innerHTML = renderWorks(staticPages.works),
 
-const ROUTES = {
-  podcast_1: pagePodcast1,
-  podcast_2: pagePodcast2,
-  newsletter_1: pageNewsletter1,
-  newsletter_2: pageNewsletter2
+  // Podcast
+  'podcast_1': async () => { main.innerHTML = await renderPodcastList('podcast_1'); },
+  'podcast_2': async () => { main.innerHTML = await renderPodcastList('podcast_2'); },
+
+  // Newsletter
+  'newsletter_1': async () => { main.innerHTML = await renderNewsletterList('newsletter_1');},
+  'newsletter_2': async () => { main.innerHTML = await renderNewsletterList('newsletter_2');},
 };
+/* ========== MODULE:ROUTES-END ========== */
 
-// 切換內容
-window.switchContent = async function(type, id) {
-  // 1. 若是組件型頁（包含分頁、渲染），優先由 ROUTES 執行
-  if (ROUTES[id]) {
-    const html = await ROUTES[id]();
-    document.getElementById('main-content').innerHTML = html;
-    return;
-  }
-  // 2. 靜態頁面再由 staticPages 提供內容（簡單 HTML 模板）
-  if (type === 'static' && staticPages[id]) {
-    document.getElementById('main-content').innerHTML = staticPages[id];
-    return;
-  }
-  // 3. 未知型別可給404/錯誤提示
-  document.getElementById('main-content').innerHTML = '<p>找不到頁面</p>';
-};
-
-// SPA 路由主控
+/* ========== MODULE:HISTORY-START ========== */
 async function render() {
-  const [routePart] = location.hash.replace('#', '').split('?');
-  const hash = routePart || 'home';
-  const app = document.getElementById('main-content');
-
-  try {
-    // 1. detail 型頁面（如 viewPodcast/viewNewsletter）
-    if (hash === 'viewPodcast') {
-      const q = params();
-      if (!q.json || !q.guid) app.innerHTML = `<div class="card"><p>缺少參數。</p></div>`;
-      else app.innerHTML = await renderPodcastDetail(q.json, q.guid);
-    } else if (hash === 'viewNewsletter') {
-      const q = params();
-      if (!q.dir || !q.slug) app.innerHTML = `<div class="card"><p>缺少參數。</p></div>`;
-      else app.innerHTML = await renderNewsletterDetail(q.dir, q.slug);
-    }
-    // 2. ROUTES 組件頁
-    else if (ROUTES[hash]) {
-      app.innerHTML = await ROUTES[hash]();
-    }
-    // 3. 靜態頁片段
-    else {
-      app.innerHTML = staticPages[hash] || staticPages.home;
-    }
-  } catch (e) {
-    console.error('渲染錯誤:', e);
-    app.innerHTML = `<div class="card"><p>載入失敗：${e.message||e}</p></div>`;
+  const hash = window.location.hash.slice(1) || 'home';
+  // routes：包含所有列表/靜態頁 async callback，首頁可能不用 async
+  if (routes[hash]) {
+    // 若 callback 為 async，需 await
+    await routes[hash]();
+    return;
   }
+  // 處理 podcast 單集詳頁
+  const [base, queryStr] = hash.split('?');
+  if (/^podcast_\d-detail$/.test(base)) {
+    const params = new URLSearchParams(queryStr);
+    const id = params.get('id');
+    const main = document.getElementById('main-content');
+    // 詳頁要 async await
+    main.innerHTML = await renderPodcastDetail(base.replace('-detail', ''), id);
+    return;
+  }
+  // 處理 newsletter 詳頁
+  if (/^newsletter_\d-detail$/.test(base)) {
+    const params = new URLSearchParams(queryStr);
+    const id = params.get('id');
+    const main = document.getElementById('main-content');
+    main.innerHTML = await renderNewsletterDetail(base.replace('-detail', ''), id);
+    return;
+  }
+  document.getElementById('main-content').innerHTML = '<p>找不到頁面</p>';
 }
 
 window.addEventListener('hashchange', render);
-document.addEventListener('DOMContentLoaded', render);
+window.addEventListener('DOMContentLoaded', render);
+/* ========== MODULE:HISTORY-END ========== */
 
+
+/* ========== MODULE:INIT-START ========== */
+render();
+/* ========== MODULE:INIT-END ========== */

@@ -65,9 +65,7 @@ export async function renderPodcastList(jsonPath, page = 1) {
   pageItems.forEach((ep) => {
     const imgSrc = getEpisodeImage(ep, showCover);
     html += `
-      <div class="card" style="cursor:pointer;" onclick="location.hash='#viewPodcast?json=${encodeURIComponent(
-        jsonPath
-      )}&guid=${encodeURIComponent(ep.guid)}'">
+      <div class="card" style="cursor:pointer;" onclick="location.hash='#${jsonPath}-detail?id=${encodeURIComponent(ep.guid)}'">
         <div style="display:flex;align-items:center;">
           ${
             imgSrc
@@ -104,31 +102,19 @@ export async function renderPodcastList(jsonPath, page = 1) {
 
 // 詳細頁渲染
 export async function renderPodcastDetail(jsonPath, guid) {
-  // 1. 載入 podcast JSON
   const base = getBasePath();
   const url = `${base}data/${jsonPath}.json`;
-  const res = await fetch(url);
-  const items = await res.json();
+  let items = [];
+  try {
+    const res = await fetch(url);
+    items = await res.json();
+  } catch (e) {
+    return `<div class="card"><p>資料載入失敗：${e.message || e}</p></div>`;
+  }
 
-  // 2. 單集查找（這裡放 find）
+  // 單集查找
   const ep = items.find((x) => x.guid === guid);
   if (!ep) return `<div class="card"><p>找不到單集（guid=${guid}）。</p></div>`;
-
-  // 3. 渲染詳頁內容
-
-  // 滾動到標題
-  setTimeout(() => {
-    // 取得單集 <h2 ...>，取其 parent.card
-    const heading = document.getElementById("podcast-article-title");
-    const card = heading && heading.closest(".card");
-    if (card) {
-      // 捲到 .card 的頂端
-      card.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else if (heading) {
-      // fallback: 只捲動標題本身
-      heading.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, 0);
 
   // Firstory Player嵌入
   function firstoryEmbedFromPermalink(permalink) {
@@ -139,11 +125,22 @@ export async function renderPodcastDetail(jsonPath, guid) {
   }
   const embed = firstoryEmbedFromPermalink(ep.permalink || ep.link);
 
-  // 說明欄位，帶 HTML 的直接插入 innerHTML，否則 escape
+  // 說明欄位（帶 HTML 或普通純文字）
   let description = ep.description_html || ep.description || ep.content || "";
   if (!/<\w+/.test(description)) {
     description = htmlEscape(description).replace(/\n/g, "<br>");
   }
+
+  // 滾動到標題
+  setTimeout(() => {
+    const heading = document.getElementById("podcast-article-title");
+    const card = heading && heading.closest(".card");
+    if (card) {
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else if (heading) {
+      heading.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 0);
 
   return `
     <div class="card">
@@ -161,7 +158,8 @@ export async function renderPodcastDetail(jsonPath, guid) {
       }
       <div class="desc" style="margin-top:1em;">${description}</div>
       <div class="pager" style="margin-top:40px;">
-        <a href="javascript:location.hash='#${jsonPath}';setTimeout(()=>window.dispatchEvent(new HashChangeEvent('hashchange')),0);">← 返回列表</a>
+        <a href="#${jsonPath}">← 返回列表</a>
       </div>
-    </div>`;
+    </div>
+  `;
 }
