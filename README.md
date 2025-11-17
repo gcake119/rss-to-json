@@ -31,7 +31,7 @@ GCAKE.Space 是一個完全免伺服器的個人創作者網站，整合了：
 
 ### 快速開始
 
-<bash>
+```bash
 # 1. 克隆專案
 git clone https://github.com/gcake119/rss-to-json.git
 cd rss-to-json
@@ -43,11 +43,11 @@ npm install
 npm run dev
 
 # 4. 瀏覽器開啟 http://localhost:5173
-</bash>
+```
 
 ### 部署指令
 
-<bash>
+```bash
 # 構建靜態檔案
 npm run build
 
@@ -56,7 +56,7 @@ npm run deploy
 
 # 預覽構建結果
 npm run preview
-</bash>
+```
 
 ---
 
@@ -64,7 +64,7 @@ npm run preview
 
 ### 目錄結構概覽
 
-<text>
+```text
 rss-to-json/
 ├─ index.html              # 唯一 HTML 入口（SPA 架構）
 ├─ style.css               # 單一 CSS（Gruvbox 主題 + RWD）
@@ -85,7 +85,7 @@ rss-to-json/
 ├─ img/                    # 圖片資源
 ├─ scripts/                # 自動化腳本
 └─ dist/                   # 構建輸出（自動生成）
-</text>
+```
 
 ### 重點檔案說明
 

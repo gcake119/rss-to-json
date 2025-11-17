@@ -17,6 +17,7 @@
 ## [v1.0.1] - 2025-11-17
 
 > **對應規格書**：[/spec/00-baseline-spec.md v1.0.1](./spec/00-baseline-spec.md)
+> **本次更新**：[Commit 4dc2cd4](https://github.com/gcake119/rss-to-json/commit/4dc2cd4f07b0f95cc8a60d2d9bef7e39b9a2c2e3)
 
 ### ✅ 已完成功能
 
@@ -72,7 +73,7 @@
 
 ## [v1.0.0] - 2025-11-16
 
-> **對應規格書**：Baseline v1.0（已被 v1.0.1 覆蓋，請查看 [Git 歷史](https://github.com/gcake119/rss-to-json/commits/main/spec/00-baseline-spec.md)）
+> **對應規格書**：Baseline v1.0（已被 v1.0.1 覆蓋，請查看 [Commit 9c5ba12](https://github.com/gcake119/rss-to-json/commit/9c5ba126f1f5a5ff4ed8e30a0ef0e8cde2c4f4dd)）
 
 ### ✅ 已完成功能
 
