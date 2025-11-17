@@ -1,82 +1,135 @@
 # 🎯 GCAKE.Space 雞蛋糕個人創作者網站
 
-**專案現況與技術總覽（2025-11-16 03:30）**
-
-> GitHub repo：[gcake119/rss-to-json](https://github.com/gcake119/rss-to-json)  
+> 零伺服器、去中心化的個人創作中心  
 > 測試站：[gcake119.github.io/rss-to-json](https://gcake119.github.io/rss-to-json)
 
 ---
 
-## 📋 專案宗旨
+## 📋 這是什麼？
 
-- 採用 ENS、IPFS、Storj、RSS feeds 等去中心化技術，構建零伺服器高韌性的創作者主頁
-- Podcast、電子報內容全程自動化、公開同步，每次內容修正皆產生靜態 JSON
-- 界面與資料結構完全模組化設計，清楚分離內容、樣式、邏輯
-- 支援 IPFS/CDN 多路徑，一站完成前端展示、數據備援與反查
+GCAKE.Space 是一個完全免伺服器的個人創作者網站，整合了：
 
----
+- **2 個 Podcast 節目**（列表 + 單集詳頁，支援播放器）
+- **2 份 Newsletter 電子報**（列表 + 內容詳頁）
+- **靜態頁面**（首頁、About、作品集、聯絡方式）
 
-## 🏗️ 核心架構與開發流程
+### 核心特色
 
-### 技術選型
-
-- 原生 ES module+SPA，hash route（無框架）
-- 單一 css 搭配 Gruvbox 主題，RWD 支援主流設備
-- 靜態內容（首頁/About/作品集/聯絡）獨立於 staticContent.js 物件管理
-- Podcast/Newsletter JSON 動態渲染（data/資料分流, podcast/newsletter_x.json）
-- **全新導入 SDD（Spec Driven Development）模組化規格書**，所有架構與功能演進皆以 `/spec` 內規格文件驅動與追蹤
-
-### 主要開發流程
-
-1. 全程 Cursor IDE 本地開發，npm script 一鍵 hot reload、deploy、同步 GitHub Pages
-2. 部署流程自動化，含 Vite build、IPFS 推送、GitHub Actions
-3. 前端資料流經由 RSS-to-JSON workflow，內容每日同步 Storj 公網備份
-4. 前後端結構、資料格式皆有獨立 baseline/section SDD 規格書可追溯，完整專案演進脈絡
+- **零維運成本**：採用 ENS、IPFS、Storj、RSS feeds 等去中心化技術，無需伺服器
+- **自動化內容同步**：RSS-to-JSON 自動轉換，內容更新無需手動上傳
+- **模組化架構**：單一 HTML/CSS，所有 JS 以插槽邊界明確分隔，未來可無痛遷移 Nuxt/Vue
+- **SDD 規格書驅動**：所有架構與功能演進皆以 `/spec` 內規格文件追蹤
 
 ---
 
-## 📊 資料結構與自動化流程
+## 🚀 怎麼跑起來？
 
-- `data/podcast_1.json`、`data/newsletter_1.json`... 皆自動產生並同步 Storj
-- podcast/newsletter schema 皆含封面、音檔跨服務 fallback（Storj/主機/CDN）
-- `/assets/`、`/css/`、`/docs/` 子資料夾專責靜態、樣式與說明
+### 開發環境需求
 
----
+- Node.js 18+
+- npm 或 pnpm
 
-## ✅ 已完成功能/修正重點
+### 快速開始
 
-- Podcast 詳細頁/列表/分頁，全部動態渲染＋主題相容
-  - 單集定位、描述 HTML 解析、分頁按鈕（自定義函式，移除 inline onclick）
-  - 回列表可滾動定位
-  - 音檔/cover 自動 fallback
-- SPA 多路由與 hash 切換、主選單導覽全部可用
-- RSS-to-JSON workflow 及公開同步已測試
-- 整合主題/樣式到單一 CSS 文件按需增刪
+<bash>
+# 1. 克隆專案
+git clone https://github.com/gcake119/rss-to-json.git
+cd rss-to-json
 
----
+# 2. 安裝依賴
+npm install
 
-## 🚧 進行中／待辦功能
+# 3. 啟動開發伺服器
+npm run dev
 
-- Storj 上傳、json 公網同步流程自動化補強
-- Newsletter 詳頁、分頁、滾動補齊
-- 各資料 schema 增加多封面、多語音欄位
-- SEO/a11y、社群 API 集成強化
-- IPFS/ENS 綁定、CID 版本自動同步腳本
-- 推播/Email/Telegram 多平台通知
-- 前端模組自動測試、Storybook 文檔優化
+# 4. 瀏覽器開啟 http://localhost:5173
+</bash>
 
----
+### 部署指令
 
-## 🎯 專案現況・模組化優勢
+<bash>
+# 構建靜態檔案
+npm run build
 
-- 全站主架構與渲染模組已穩定、易於擴展
-- SPA/router/hash RWD/SEO 可持續優化
-- 每個 JS/CSS/JSON/靜態內容檔皆明確對應單一責任
-- 資料流「機械化、可追溯、可自動測」
-- 適合個人/小團隊永久開源維護
-- **所有架構 SDD 規格書皆於 `/spec` 目錄透明公開**
+# 部署到 GitHub Pages（需先設定 repo）
+npm run deploy
+
+# 預覽構建結果
+npm run preview
+</bash>
 
 ---
 
-> **核心精神**：  
-> 從規格書到資料流到程式碼全面模組化，自動化資料同步，最大程度降低維護成本，創作者網站自主管理韌性再升級！
+## 📁 結構怎麼看？
+
+### 目錄結構概覽
+
+<text>
+rss-to-json/
+├─ index.html              # 唯一 HTML 入口（SPA 架構）
+├─ style.css               # 單一 CSS（Gruvbox 主題 + RWD）
+├─ js/                     # JavaScript 模組
+│  ├─ app.js               # 路由與核心邏輯
+│  ├─ staticContent.js     # 靜態頁內容（物件化）
+│  ├─ static_render.js     # 靜態頁渲染模組
+│  ├─ podcast_render.js    # Podcast 列表/詳頁渲染
+│  ├─ newsletter_render.js # Newsletter 列表/詳頁渲染
+│  └─ util.js              # 工具函式
+├─ data/                   # JSON 資料（RSS-to-JSON 自動生成）
+│  ├─ podcast_1.json
+│  ├─ podcast_2.json
+│  ├─ newsletter_1.json
+│  └─ newsletter_2.json
+├─ spec/                   # SDD 規格書
+│  └─ 00-baseline-spec.md  # 專案基線規格
+├─ img/                    # 圖片資源
+├─ scripts/                # 自動化腳本
+└─ dist/                   # 構建輸出（自動生成）
+</text>
+
+### 重點檔案說明
+
+| 檔案 | 用途 | 修改頻率 |
+|------|------|---------|
+| `index.html` | SPA 唯一入口，所有 Section 以插槽註解標記 | 低 |
+| `style.css` | 全站樣式（主題、RWD、各 Section 樣式） | 中 |
+| `js/app.js` | 路由管理、初始化、事件監聽 | 中 |
+| `js/staticContent.js` | 靜態頁內容（首頁、About、Works、Contact） | 高 |
+| `js/podcast_render.js` | Podcast 列表與詳頁渲染邏輯 | 中 |
+| `data/*.json` | RSS-to-JSON 自動生成，**不應手動編輯** | 自動 |
+| `spec/*.md` | 規格書與變更紀錄 | 高 |
+
+---
+
+## 🆕 最新進度摘要
+
+- **2025-11-17**：完成 v1.0.1 Baseline 規格書更新
+- **2025-11-16**：導入 SDD 規格書，完成 Podcast SPA 模組化重構
+- **2025-11-10**：完成 RSS-to-JSON 自動化資料流
+
+> 詳細變更紀錄請參閱：[CHANGELOG.md](./CHANGELOG.md) 或 [/spec](./spec/)
+
+---
+
+## 📚 延伸閱讀
+
+- **規格書**：[/spec/00-baseline-spec.md](./spec/00-baseline-spec.md) - 完整專案架構與邊界定義
+- **開發流程**：參考 `/spec` 內 SDD 文件
+- **RSS-to-JSON**：自動化內容同步流程說明（規劃中）
+
+---
+
+## 🤝 貢獻指南
+
+歡迎提交 Issue 或 Pull Request！  
+所有改動請先參考 `/spec` 內規格書，並更新對應文件。
+
+---
+
+## 📝 授權
+
+MIT License
+
+---
+
+> **核心精神**：從規格書到資料流到程式碼全面模組化，自動化資料同步，最大程度降低維護成本，創作者網站自主管理韌性再升級！
