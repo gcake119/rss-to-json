@@ -10,6 +10,7 @@
 
 | 版本   | 日期       | 修改內容                           | 修改者 |
 |--------|------------|------------------------------------|--------|
+| v1.1.0 | 2026-01-19 | Storj → IPNS 架構調整、新增 Newsletter 3 | -      |
 | v1.0.0 | 2025-11-17 | 初版：定義 Podcast/Newsletter/Works JSON 規格 | -      |
 
 ---
@@ -30,24 +31,69 @@
 
 ### 1.1 設計原則
 
-- **靜態主體 + 動態 JSON**：網站核心檔案（HTML/CSS/JS）固定於 IPFS，日常內容更新僅修改 JSON，同步至 Storj。
+- **靜態主體 + 動態 JSON**：網站核心檔案（HTML/CSS/JS）與 JSON 一同打包至 IPFS，透過 IPNS 指向最新版本。
 - **自動化優先**：Podcast、Newsletter 透過自動化腳本產生 JSON，減少人工維護。
 - **統一格式**：所有 JSON 皆採用相同命名慣例與結構邏輯，便於前端統一處理。
 - **容錯設計**：前端具備 fallback 機制，確保單一來源失效時仍可正常運作。
+- **零 Gas 維運**：日常更新透過 IPNS 完成，無需修改 ENS，完全免費。
 
 ### 1.2 資料流向
 
 ```text
-1. Podcast：RSS Feed → GitHub Action 自動轉換 → podcast1.json / podcast2.json → Storj CDN
-2. Newsletter：Arweave (Paragraph) → GitHub Action 抓取 transactions → newsletter1.json / newsletter2.json → Storj CDN
-3. Works：手動維護 works.json（未來可串接 GitHub API） → GitHub Action 同步 → Storj CDN
-4. 前端：Nuxt3 fetch Storj JSON → 渲染頁面 → SSG/SEO 優化
+1. Podcast：RSS Feed → GitHub Action 自動轉換 → podcast1.json / podcast2.json → IPFS（透過 IPNS 指向）
+2. Newsletter：Arweave (Paragraph) → GitHub Action 抓取 transactions → newsletter1.json / newsletter2.json / newsletter3.json → IPFS（透過 IPNS 指向）
+3. Works：手動維護 works.json（未來可串接 GitHub API） → GitHub Action 同步 → IPFS（透過 IPNS 指向）
+4. 前端：Nuxt3 fetch 相對路徑 JSON → 渲染頁面 → SSG/SEO 優化
 ```
 
-### 1.3 檔案命名規則
+### 1.3 IPNS 架構說明
+
+```text
+ENS (gcake.eth)
+    │
+    │ contenthash: ipns://k51qzi5uqu5d...
+    │ （一次設定，永不改變）
+    │
+    ▼
+IPNS Key (k51qzi5uqu5d...)
+    │
+    │ 目前指向: bafybeig...xyz  ← 每次更新改這裡（免費）
+    │
+    ▼
+Pinata 上的 IPFS CID (bafybeig...xyz)
+    │
+    └── index.html
+    └── style.css
+    └── js/app.js
+    └── data/
+        ├── podcast_1.json
+        ├── podcast_2.json
+        ├── newsletter_1.json
+        ├── newsletter_2.json
+        └── newsletter_3.json
+```
+
+| 層級 | 功能 | 變動頻率 |
+|------|------|----------|
+| **ENS** | 人類可讀域名 → IPNS | ❄️ 永不變 |
+| **IPNS** | 可變指標 → IPFS CID | 🔄 每次更新 |
+| **Pinata/IPFS** | 實際檔案存放 | 🔄 每次更新 |
+
+### 1.4 費用說明
+
+| 操作 | 費用 |
+|------|------|
+| 上傳檔案到 IPFS 網路 | **免費** |
+| 取得 CID（Content ID） | **免費** |
+| 更新 IPNS 指向 | **免費** |
+| Pinata Pinning（1GB 內） | **免費** |
+| ENS 初始設定 contenthash | ⚡ 一次性 gas（~$5-20） |
+| **日常維運** | **$0** |
+
+### 1.5 檔案命名規則
 
 - Podcast JSON：`podcast1.json`、`podcast2.json`（對應兩個 Podcast 節目）
-- Newsletter JSON：`newsletter1.json`、`newsletter2.json`（對應兩份電子報）
+- Newsletter JSON：`newsletter1.json`、`newsletter2.json`、`newsletter3.json`（對應三份電子報）
 - Works JSON：`works.json`（統一作品集檔案）
 
 ---
@@ -116,8 +162,9 @@
 1. GitHub Action 定期觸發（cron: 每日 00:00 UTC）
 2. 執行 RSS Parser 腳本，抓取最新 episodes
 3. 轉換為 JSON 格式，寫入 podcast1.json / podcast2.json
-4. 推送至 Storj CDN
-5. 前端 Nuxt3 頁面 fetch 最新 JSON
+4. 重新打包網站上傳 IPFS（透過 Pinata）
+5. 更新 IPNS 指向新 CID（免費）
+6. 前端通過 IPNS 解析取得最新 JSON
 ```
 
 ---
@@ -184,9 +231,10 @@
 1. GitHub Action 定期觸發（cron: 每日 00:00 UTC）
 2. 查詢 Arweave 錢包地址的最新 transactions
 3. 解析 transaction data，轉換為 JSON 格式
-4. 寫入 newsletter1.json / newsletter2.json
-5. 推送至 Storj CDN
-6. 前端 Nuxt3 頁面 fetch 最新 JSON
+4. 寫入 newsletter1.json / newsletter2.json / newsletter3.json
+5. 重新打包網站上傳 IPFS（透過 Pinata）
+6. 更新 IPNS 指向新 CID（免費）
+7. 前端通過 IPNS 解析取得最新 JSON
 ```
 
 ---
@@ -196,7 +244,7 @@
 ### 4.1 資料來源
 
 - **來源**：手動維護 `works.json`（未來可考慮串接 GitHub API 自動抓取 repo metadata）
-- **更新方式**：開發者直接編輯 JSON，push 至 GitHub，觸發 Action 同步 Storj
+- **更新方式**：開發者直接編輯 JSON，push 至 GitHub，觸發 Action 上傳 IPFS 並更新 IPNS
 - **更新頻率**：依需求手動更新
 
 ### 4.2 JSON Schema
@@ -221,29 +269,42 @@
 
 ### 5.1 資料取得路徑
 
-- **Storj CDN 主路徑**：`https://storj-cdn.example.com/data/podcast1.json`
-- **IPFS Gateway 備援**：`https://ipfs.io/ipfs/{CID}/podcast1.json`（僅作 fallback）
+- **相對路徑優先**：`/data/podcast1.json`（SSG 預渲染時直接使用）
+- **IPFS Gateway fallback**：多 Gateway 備援（dweb.link / ipfs.io / cloudflare-ipfs.com）
 - **本地快取**：前端可實作 localStorage 快取，提升載入速度
 
 ### 5.2 Nuxt3 Fetch 範例
 
 ```javascript
 // 範例：在 Nuxt3 頁面中 fetch Podcast 資料
+const IPFS_GATEWAYS = [
+  'https://dweb.link',
+  'https://ipfs.io',
+  'https://cloudflare-ipfs.com',
+  'https://gateway.pinata.cloud'
+]
+
 export default {
-  async asyncData({ $axios }) {
+  async asyncData() {
+    // 相對路徑優先（SSG 預渲染時直接使用）
     try {
-      const podcast1 = await $axios.$get('https://storj-cdn.example.com/data/podcast1.json')
+      const podcast1 = await $fetch('/data/podcast1.json')
       return { podcast1 }
     } catch (error) {
-      console.error('Storj 取得失敗，嘗試 IPFS fallback', error)
+      console.error('相對路徑取得失敗，嘗試 IPFS Gateway', error)
+    }
+
+    // IPFS Gateway fallback
+    for (const gateway of IPFS_GATEWAYS) {
       try {
-        const podcast1 = await $axios.$get('https://ipfs.io/ipfs/{CID}/podcast1.json')
+        const podcast1 = await $fetch(`${gateway}/ipns/gcake.eth/data/podcast1.json`)
         return { podcast1 }
-      } catch (fallbackError) {
-        console.error('IPFS fallback 失敗', fallbackError)
-        return { podcast1: null }
+      } catch (err) {
+        console.error(`${gateway} 失敗`, err)
       }
     }
+
+    return { podcast1: null }
   }
 }
 ```
@@ -283,7 +344,7 @@ head() {
 
 ### 6.1 資料來源失效處理
 
-- **Storj 失效**：自動切換至 IPFS Gateway
+- **相對路徑失效**：依序嘗試多個 IPFS Gateway
 - **IPFS Gateway 失效**：顯示本地快取（localStorage）
 - **所有來源失效**：顯示預設訊息（如「資料載入中，請稍後再試」）
 
@@ -304,8 +365,8 @@ head() {
 
 ```text
 1. Podcast/Newsletter：GitHub Action 自動執行，無需手動操作
-2. Works：編輯 works.json → git push → GitHub Action 自動同步 Storj
-3. 確認前端顯示正常（透過 Storj CDN URL 直接訪問 JSON 檢查）
+2. Works：編輯 works.json → git push → GitHub Action 自動上傳 IPFS 並更新 IPNS
+3. 確認前端顯示正常（透過 IPFS Gateway URL 直接訪問 JSON 檢查）
 ```
 
 ### 7.2 規格書更新
@@ -314,71 +375,104 @@ head() {
 - 更新 `CHANGELOG.md` 記錄變更
 - 更新對應版本號
 
-### 7.3 重大更新（需更新 IPFS CID）
+### 7.3 重大更新（需更新 ENS contenthash）
 
-僅在以下情況才重新打包並上傳 IPFS：
+僅在以下情況才需要修改 ENS contenthash（需消耗 gas）：
 
-- 前端架構調整（如 Nuxt 版本升級、路由改動）
-- 主要 CSS/JS 檔案重構
-- 網站骨架變更
+- 更換 IPNS Key（極罕見）
+- ENS 域名變更
 
-日常 JSON 內容更新**不需要**更新 IPFS CID，也不需要消耗 ENS gas fee。
+日常 JSON 內容更新、前端架構調整、CSS/JS 重構等，**全部透過 IPNS 更新**，不需要消耗 ENS gas fee。
 
 ---
 
 ## 附錄：GitHub Action 腳本範例
 
-### A1. Podcast RSS-to-JSON 腳本
+### A1. Pinata 部署腳本（deploy-ipfs.js）
 
-```yaml
-name: Update Podcast JSON
+```javascript
+// scripts/deploy-ipfs.js
+import fs from 'fs'
+import path from 'path'
 
-on:
-  schedule:
-    - cron: '0 0 * * *'  # 每日 00:00 UTC
-  workflow_dispatch:
+const PINATA_API_KEY = process.env.PINATA_API_KEY
+const PINATA_API_SECRET = process.env.PINATA_API_SECRET
+const PINATA_JWT = process.env.PINATA_JWT
+const IPNS_KEY_ID = process.env.IPNS_KEY_ID
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - run: npm install
-      - run: npm run fetch-podcast
-      - run: |
-          # 同步至 Storj（使用 Storj CLI 或 API）
-          storj cp podcast1.json storj://bucket/data/podcast1.json
+async function uploadDirectory() {
+  // 上傳 dist/ 資料夾到 Pinata IPFS
+  // 回傳 CID
+}
+
+async function updateIPNS(cid) {
+  // 更新 IPNS 指向新 CID（免費）
+  const response = await fetch(`https://api.pinata.cloud/v3/ipns/name/${IPNS_KEY_ID}`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${PINATA_JWT}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ cid })
+  })
+  return response.json()
+}
+
+async function main() {
+  const cid = await uploadDirectory()
+  await updateIPNS(cid)
+  console.log(`✅ Deployed! CID: ${cid}`)
+}
+
+main()
 ```
 
-### A2. Newsletter Arweave 抓取腳本
+### A2. GitHub Action 完整流程
 
 ```yaml
-name: Update Newsletter JSON
+name: RSS to JSON + Deploy IPFS
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 4 * * *'  # 每日 04:00 UTC
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  update:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      PINATA_API_KEY: ${{ secrets.PINATA_API_KEY }}
+      PINATA_API_SECRET: ${{ secrets.PINATA_API_SECRET }}
+      PINATA_JWT: ${{ secrets.PINATA_JWT }}
+      IPNS_KEY_ID: ${{ secrets.IPNS_KEY_ID }}
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-      - run: npm install
-      - run: npm run fetch-newsletter
-      - run: |
-          storj cp newsletter1.json storj://bucket/data/newsletter1.json
+          node-version: '20'
+      - run: npm ci
+
+      # 1. Fetch RSS/Arweave → JSON
+      - run: node scripts/podcast.js
+      - run: node scripts/newsletter.js
+
+      # 2. Build site
+      - run: npm run build
+
+      # 3. Deploy to IPFS + Update IPNS（免費）
+      - run: node scripts/deploy-ipfs.js
 ```
 
 ---
 
 ## 結語
 
-本規格書確保 Podcast、Newsletter、Works 三類資料來源與格式統一，前端可依循固定邏輯取得資料，並具備完善的容錯機制。日常維護僅需更新 JSON，不影響 IPFS 主體與 ENS 設定，達成「一次上鏈、持續更新、零 gas 維運」的目標。
+本規格書確保 Podcast、Newsletter、Works 三類資料來源與格式統一，前端可依循固定邏輯取得資料，並具備完善的容錯機制。
+
+**架構優勢**：
+- 日常維護僅需更新 JSON，透過 IPNS 自動指向最新版本
+- ENS 設定一次後永不需要修改
+- 達成「一次設定、持續更新、零 gas 維運」的目標

@@ -114,7 +114,7 @@
 - 內容：
   - 標題：「電子報」
   - 簡介：「定期發送技術文章與區塊鏈觀察」
-  - 兩個電子報卡片（與 Podcast 類似排版）：
+  - 三個電子報卡片（與 Podcast 類似排版）：
     - 卡片 1：「喂喂你還好不好」
       - 封面圖（Unsplash：`https://source.unsplash.com/400x400/?newsletter,writing`）
       - 簡介：「生活與技術隨筆」
@@ -123,6 +123,10 @@
       - 封面圖（Unsplash：`https://source.unsplash.com/400x400/?blockchain,news`）
       - 簡介：「區塊鏈新聞與深度分析」
       - 按鈕：「閱讀文章」（`#newsletter_2`）
+    - 卡片 3：「雞蛋糕的前端修煉屋」
+      - 封面圖（Unsplash：`https://source.unsplash.com/400x400/?coding,frontend`）
+      - 簡介：「前端開發技術分享與學習筆記」
+      - 按鈕：「閱讀文章」（`#newsletter_3`）
 
 #### Section: Works（作品集）
 

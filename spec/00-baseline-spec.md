@@ -1,10 +1,10 @@
-# 【GCAKE.Space】現狀 Baseline 規格書 v1.0.1
+# 【GCAKE.Space】現狀 Baseline 規格書 v1.1.0
 
 （SPA 單檔版，模組化架構，為未來 SSG+SEO 遷移預留）
 
 **文件用途**：盤點現有完成功能、確立模組邊界、為後續改版與 Nuxt 遷移預留清晰的插槽邊界。
-**更新時間**：2025年11月17日  
-**版本號**：v1.0.1  
+**更新時間**：2026年1月19日  
+**版本號**：v1.1.0  
 **對應變更紀錄**：[CHANGELOG.md v1.0.1](../CHANGELOG.md#v101---2025-11-17)
 **測試站**：[https://gcake119.github.io/rss-to-json](https://gcake119.github.io/rss-to-json)  
 **GitHub Repo**：[https://github.com/gcake119/rss-to-json](https://github.com/gcake119/rss-to-json)
@@ -14,8 +14,7 @@
 ## 版本履歷
 
 | 版本 | 日期 | 主要變更 | 詳細紀錄 |
-|------|------|---------|---------|
-| v1.0.1 | 2025-11-17 | Podcast 模組化、SDD 導入 | [CHANGELOG](../CHANGELOG.md#v101---2025-11-17) |
+|------|------|---------|---------|| v1.1.0 | 2026-01-19 | Storj → IPNS 架構調整、新增 Newsletter 3 | [CHANGELOG](../CHANGELOG.md#v110---2026-01-19) || v1.0.1 | 2025-11-17 | Podcast 模組化、SDD 導入 | [CHANGELOG](../CHANGELOG.md#v101---2025-11-17) |
 | v1.0 | 2025-11-16 | 初版規格書 | [CHANGELOG](../CHANGELOG.md#v100---2025-11-16) |
 
 ---
@@ -24,19 +23,19 @@
 
 ### 專案目標
 
-以 ENS、IPFS、RSS feeds、Storj 等分散式技術為基礎，建立「完全免伺服器的個人創作中心」，包含：
+以 ENS、IPFS、IPNS、RSS feeds 等分散式技術為基礎，建立「完全免伺服器的個人創作中心」，包含：
 
 - 2 個 Podcast 節目（列表 + 單集詳頁）
-- 2 份 Newsletter 電子報（列表 + 單篇詳頁）
+- 3 份 Newsletter 電子報（列表 + 單篇詳頁）
 - 靜態頁面（首頁、About、Works、Contact）
 - 前端開發作品集（規劃中）
 
 ### 架構理念
 
-- **靜態為主**：所有內容靜態化為 JSON，托管在 Storj + GitHub
+- **靜態為主**：所有內容靜態化為 JSON，與網站一同打包至 IPFS
 - **動態補充**：RSS-to-JSON 自動化流程，內容無需手動上傳
-- **零成本維運**：僅需 ENS 年費 + 少量鏈上 gas，無伺服器成本
-- **分散式存儲**：GitHub Pages（開發） + IPFS（公開） + ENS（域名解析）
+- **零成本維運**：僅需 ENS 年費 + 一次性 gas 設定，日常更新免費
+- **分散式存儲**：GitHub Pages（開發） + IPFS/IPNS（公開） + ENS（域名解析）
 - **模組化設計**：所有 JS/CSS/HTML 皆以插槽邊界明確分隔，未來可無痛遷移 Nuxt/Vue
 
 ---
@@ -54,7 +53,7 @@
 2. **數據來源**
    - 靜態內容：`staticContent.js` 物件化管理（首頁、About、Works、Contact）
    - 動態內容：`/data/*.json` RSS-to-JSON 輸出
-   - 備援來源：Storj 多媒體 URL fallback
+   - 備援來源：多 IPFS Gateway fallback
 
 3. **部署與維護**
    - GitHub Pages：開發測試站
@@ -97,6 +96,9 @@
    ├─ Newsletter 2（區塊鏈文摘）
    │  ├─ 列表頁（newsletter_2）
    │  └─ 詳頁（newsletter_2-detail?id=slug）
+   ├─ Newsletter 3（雞蛋糕的前端修煉屋）
+   │  ├─ 列表頁（newsletter_3）
+   │  └─ 詳頁（newsletter_3-detail?id=slug）
 
 👤 關於我 (About)
    ├─ 個人簡介
@@ -125,6 +127,8 @@
 | `#newsletter_1-detail?id=xxx` | Newsletter 1 詳頁 | `/data/newsletter_1.json` | P2 | ⏳ 進行中 |
 | `#newsletter_2` | Newsletter 2 列表 | `/data/newsletter_2.json` | P2 | ⏳ 進行中 |
 | `#newsletter_2-detail?id=xxx` | Newsletter 2 詳頁 | `/data/newsletter_2.json` | P2 | ⏳ 進行中 |
+| `#newsletter_3` | Newsletter 3 列表 | `/data/newsletter_3.json` | P2 | ⏳ 進行中 |
+| `#newsletter_3-detail?id=xxx` | Newsletter 3 詳頁 | `/data/newsletter_3.json` | P2 | ⏳ 進行中 |
 | `#about` | 關於我 | `staticContent.js` | P2 | ✅ 完成 |
 | `#works` | 作品集 | `staticContent.js` | P2 | ✅ 完成 |
 | `#contact` | 聯絡我 | `staticContent.js` | P3 | ✅ 完成 |
@@ -153,7 +157,8 @@ rss-to-json/
 │  ├─ podcast_1.json           # Podcast 1 內容（RSS-to-JSON 輸出）
 │  ├─ podcast_2.json           # Podcast 2 內容
 │  ├─ newsletter_1.json        # Newsletter 1 內容
-│  └─ newsletter_2.json        # Newsletter 2 內容
+│  ├─ newsletter_2.json        # Newsletter 2 內容
+│  └─ newsletter_3.json        # Newsletter 3 內容（雞蛋糕的前端修煉屋）
 ├─ img/                        # 圖片資源
 ├─ docs/                       # 文件資料夾
 ├─ dist/                       # 構建輸出

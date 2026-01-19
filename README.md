@@ -10,12 +10,12 @@
 GCAKE.Space 是一個完全免伺服器的個人創作者網站，整合了：
 
 - **2 個 Podcast 節目**（列表 + 單集詳頁，支援播放器）
-- **2 份 Newsletter 電子報**（列表 + 內容詳頁）
+- **3 份 Newsletter 電子報**（列表 + 內容詳頁）
 - **靜態頁面**（首頁、About、作品集、聯絡方式）
 
 ### 核心特色
 
-- **零維運成本**：採用 ENS、IPFS、Storj、RSS feeds 等去中心化技術，無需伺服器
+- **零維運成本**：採用 ENS、IPFS、IPNS 等去中心化技術，日常更新完全免費
 - **自動化內容同步**：RSS-to-JSON 自動轉換，內容更新無需手動上傳
 - **模組化架構**：單一 HTML/CSS，所有 JS 以插槽邊界明確分隔，未來可無痛遷移 Nuxt/Vue
 - **SDD 規格書驅動**：所有架構與功能演進皆以 `/spec` 內規格文件追蹤
@@ -79,9 +79,13 @@ rss-to-json/
 │  ├─ podcast_1.json
 │  ├─ podcast_2.json
 │  ├─ newsletter_1.json
-│  └─ newsletter_2.json
+│  ├─ newsletter_2.json
+│  └─ newsletter_3.json
 ├─ spec/                   # SDD 規格書
-│  └─ 00-baseline-spec.md  # 專案基線規格
+│  ├─ 00-baseline-spec.md  # 專案基線規格
+│  ├─ 01-rss-automation.md # RSS-to-JSON 自動化流程
+│  ├─ 02-deployment.md     # 部署與發布流程
+│  └─ 03-future-roadmap.md # 未來功能規劃
 ├─ img/                    # 圖片資源
 ├─ scripts/                # 自動化腳本
 └─ dist/                   # 構建輸出（自動生成）

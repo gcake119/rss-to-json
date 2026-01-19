@@ -9,8 +9,47 @@
 
 | 版本   | 日期       | 重點摘要                            | 對應規格書                                    |
 | ------ | ---------- | ----------------------------------- | --------------------------------------------- |
+| v1.1.0 | 2026-01-19 | Storj → IPNS 架構調整、新增 Newsletter 3 | [Baseline v1.1.0](./spec/00-baseline-spec.md) |
 | v1.0.1 | 2025-11-17 | 完成 Podcast 模組化、SDD 規格書導入 | [Baseline v1.0.1](./spec/00-baseline-spec.md) |
 | v1.0.0 | 2025-11-16 | 初版 SPA 架構、RSS-to-JSON 自動化   | [Baseline v1.0](./spec/00-baseline-spec.md)   |
+
+---
+
+## [v1.1.0] - 2026-01-19
+
+> **對應規格書**：[/spec/00-baseline-spec.md v1.1.0](./spec/00-baseline-spec.md)
+
+### 🔄 架構調整（BREAKING CHANGE）
+
+#### Storj → IPNS 架構遷移
+
+- 移除 Storj CDN 依賴，改用 IPFS + IPNS 架構
+- ENS 指向 IPNS Key，日常更新透過 IPNS 完成（免 gas）
+- 新增 Pinata 部署腳本（`scripts/deploy-ipfs.js`）
+- **規格對應**：[Phase-3-JSON-Spec 1.3 IPNS 架構說明](./spec/Phase-3-JSON-Spec.md#13-ipns-架構說明)
+
+#### 費用優化
+
+- 日常內容更新完全免費（IPFS 上傳 + IPNS 更新皆免費）
+- 僅 ENS 初始設定需一次性 gas（~$5-20）
+- **規格對應**：[Phase-3-JSON-Spec 1.4 費用說明](./spec/Phase-3-JSON-Spec.md#14-費用說明)
+
+### ➕ 新增功能
+
+#### Newsletter 3（雞蛋糕的前端修煉屋）
+
+- 新增第三份電子報：《雞蛋糕的前端修煉屋》
+- 前端技術分享與學習筆記
+- 新增路由：`#newsletter_3`、`#newsletter_3-detail?id=xxx`
+- 新增資料檔：`data/newsletter_3.json`
+- **規格對應**：[Baseline 三、資訊架構](./spec/00-baseline-spec.md#三資訊架構ia與頁面結構)
+
+### 📝 文件更新
+
+- 更新 `/spec/00-baseline-spec.md` v1.1.0
+- 更新 `/spec/Phase-1-Site-Skeleton.md`（新增 Newsletter 3 卡片）
+- 更新 `/spec/Phase-3-JSON-Spec.md` v1.1.0（IPNS 架構 + Newsletter 3）
+- 更新 `README.md`（3 份電子報）
 
 ---
 
@@ -102,11 +141,12 @@
 - [ ] Newsletter 1 詳頁
 - [ ] Newsletter 2 列表頁
 - [ ] Newsletter 2 詳頁
+- [ ] Newsletter 3 列表頁
+- [ ] Newsletter 3 詳頁
 
 #### SEO 與優化
 
 - [ ] SEO meta 標籤（動態更新 title、description、og:image）
-- [ ] Storj 多媒體上傳流程確認
 
 ### 📋 待規劃（P3）
 
@@ -114,7 +154,7 @@
 - [ ] Contact 頁面完善
 - [ ] Portfolio 作品集
 - [ ] 推播系統（Telegram、Email 等）
-- [ ] IPFS + ENS 完整部署
+- [x] ~~IPFS + ENS 完整部署~~（v1.1.0 已完成架構設計）
 - [ ] Nuxt3 框架遷移
 
 ---
